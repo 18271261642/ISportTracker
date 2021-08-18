@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/alarm_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/iv_back"
+            android:padding="10dp"
+            android:text="返回"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="闹钟提醒"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/indicate_color" />
+    
+    <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/title_bg" >
+
+        <Button
+            android:id="@+id/alarm_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/button_title_bg"
+            android:drawableLeft="@drawable/title_left"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/setting"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/alarm"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </RelativeLayout> -->
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/event"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                  android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cccccc" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/alarm_e1_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/setting_tag" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/alarm_e1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/alarm_e1_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:text="Event1"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                       <!--  <com.isporthk.pedometer.SwitchButton
+                            android:id="@+id/alarm_e1_switch"
+                            android:layout_width="@dimen/switchbutton_width"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            switcher:lefttext="@string/on"
+                            switcher:righttext="@string/off" /> -->
+                        
+
+                        <TextView
+                            android:id="@+id/alarm_e1_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/event1"
+                            android:gravity="center"
+                            android:text="05:50"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <CheckBox 
+                            android:id="@+id/event1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/taget_btn"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@android:drawable/divider_horizontal_textfield" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/alarm_e2_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/setting_tag"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/alarm_e2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/alarm_e2_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Event2"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <!-- <com.isporthk.pedometer.SwitchButton
+                            android:id="@+id/alarm_e2_switch"
+                            android:layout_width="@dimen/switchbutton_width"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            switcher:lefttext="@string/on"
+                            switcher:righttext="@string/off" /> -->
+
+                        <TextView
+                            android:id="@+id/alarm_e2_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:layout_toLeftOf="@+id/event2"
+                            android:text="05:50"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <CheckBox 
+                            android:id="@+id/event2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/taget_btn"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@android:drawable/divider_horizontal_textfield" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/alarm_e3_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/setting_tag"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/alarm_e3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/alarm_e3_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Event3"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                       <!--  <com.isporthk.pedometer.SwitchButton
+                            android:id="@+id/alarm_e3_switch"
+                            android:layout_width="@dimen/switchbutton_width"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            switcher:lefttext="@string/on"
+                            switcher:righttext="@string/off" /> -->
+
+                        <TextView
+                            android:id="@+id/alarm_e3_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/event3"
+                            android:gravity="center"
+                            android:text="05:50"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <CheckBox 
+                            android:id="@+id/event3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/taget_btn"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@android:drawable/divider_horizontal_textfield" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/alarm_e4_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/setting_tag"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/alarm_e4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/alarm_e4_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="Event4"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                       <!--  <com.isporthk.pedometer.SwitchButton
+                            android:id="@+id/alarm_e4_switch"
+                            android:layout_width="@dimen/switchbutton_width"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            switcher:lefttext="@string/on"
+                            switcher:righttext="@string/off" /> -->
+
+                        <TextView
+                            android:id="@+id/alarm_e4_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/event4"
+                            android:gravity="center"
+                            android:text="05:50"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <CheckBox 
+                            android:id="@+id/event4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/taget_btn"
+                            android:layout_alignParentRight="true"
+                            />
+                    </RelativeLayout>
+                    
+                </LinearLayout>
+               
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:drawable/divider_horizontal_textfield" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="left|center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="详细"
+                         android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+				<View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                  android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cccccc" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:text="标志"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:textColor="@color/black"
+                            android:id="@+id/alarm_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/setting_text_bg"
+                            android:gravity="center"
+                            android:maxLength="6"
+                            android:text="Get Up"
+                            android:textSize="15sp" >
+                        </EditText>
+                    </RelativeLayout>
+
+      <!--               <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_textfield" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/voice"
+                            android:textColor="@color/setting_text"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/alarm_voice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/setting_text_bg"
+                            android:gravity="center"
+                            android:text="20%"
+                            android:textColor="@color/setting_text_edit"
+                            android:textSize="15sp" />
+                    </RelativeLayout> -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_textfield" />
+
+                    <RelativeLayout
+                        android:id="@+id/alarm_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/time"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/alarm_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/setting_text_bg"
+                            android:gravity="center"
+                            android:text="05:50"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_textfield" />
+
+                    <!-- <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/vibration"
+                            android:textColor="@color/setting_text"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/alarm_vibration"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/setting_bu_bg"
+                            android:gravity="center"
+                            android:text="@string/on"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_textfield" /> -->
+
+                    <RelativeLayout
+                        android:id="@+id/alarm_repeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/alarm_repeat_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/repeat"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/alarm_repeat_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/alarm_repeat_title"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical|right"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginLeft="5dp"
+                            android:text="星期日"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                    
+                     <!-- <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:drawable/divider_horizontal_textfield" />
+                     
+                      <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/alarm_repeat_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/repeatswitch"
+                            android:textColor="@color/setting_text"
+                            android:textSize="17sp" />
+
+                         <com.isporthk.pedometer.SwitchButton
+                            android:id="@+id/alarm_repeat_switch"
+                            android:layout_width="@dimen/switchbutton_width"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            switcher:lefttext="@string/on"
+                            switcher:righttext="@string/off" />
+                    </RelativeLayout> -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:drawable/divider_horizontal_textfield" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center" >
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/alarm_save"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:padding="8dip"
+                    android:text="@string/save"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lucency">#00000000</color>
+    <color name="bg">#48B68D</color>
+    <color name="light_white">#eeeeee</color>
+    <!-- 导航栏 -->
+    <color name="return_bg_on">#aaaaaa</color>
+    <color name="return_bg">#ffffff</color>
+    <color name="gray_text">#979797</color>
+    <color name="vivi_yellow">#0171ba</color>
+    <color name="vivi_gray">#555559</color>
+    <color name="vivi_midle_gray">#bcbec0</color>
+    <!-- 个人资料 -->
+    <color name="user_info_title">#473638</color>
+    <color name="set_user_info_number">#473638</color>
+    <color name="user_info_number">#bbbbbb</color>
+    <color name="user_info_line">#dedede</color>
+    <color name="set_user_info_on">#e8e8e8</color>
+    <color name="set_user_info">#00000000</color>
+    <color name="user_info_ly">#ffffff</color>
+    <color name="bg_complete_user_info_cancle_or_ok">#00ceb6b7</color>
+    <color name="bg_complete_user_info_cancle_or_ok_on">#ceb6b7</color>
+    <color name="bg_dialog_btn_on">#f6f6f6</color>
+    <color name="bg_dialog_btn">#ffffff</color>
+    <color name="dialog_bottom_btn_text_color_on">#5a5a5a</color>
+    <color name="dialog_bottom_btn_text_color">#5a5a5a</color>
+    <color name="bg_divider_line">#d8d8d8</color>
+
+    <!-- auto sleep -->
+    <color name="bg_sleep">#fff2f2f2</color>
+    <color name="text_sleep_item_title">#ff777777</color>
+    <color name="text_sleep_disable">#ff999999</color>
+
+    <!-- 弹出activity -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_background">#a01a1a1a</color>
+
+    <!-- 设置 -->
+    <color name="set_item">#FFFFFF</color>
+    <color name="set_item_on">#e3ffda</color>
+
+    <!-- 主界面 -->
+    <color name="layout_menu_text_color">#5c5c5c</color>
+    <color name="menu_text_bg">#00ffffff</color>
+    <color name="percent_color">#ff60c018</color>
+    <color name="deep_color">@color/green</color>
+    <color name="light_color">@color/font.blue</color>
+    <color name="elight_color">#ffffff00</color>
+    <color name="awake_color">@color/red</color>
+
+    <!-- 久坐弹出窗口 -->
+    <color name="note_long_time_text">#4c4c4c</color>
+    <color name="note_long_time_text_on">#ffffff</color>
+    <color name="sleep_line">#e7e7e7</color>
+    <color name="sleep_detail_title">#c9c9c9</color>
+    <color name="sleep_detail_num">#8d8c8c</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="calendar_top_bg">#F5A0B3</color>
+    <color name="dialog_text_color">#2c2c2c</color>
+    <color name="black">#000000</color>
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+    <color name="gray_line">#DFDFDD</color>
+    <color name="darkGray">#AAABAF</color>
+    <color name="backgroundColor">#E6E7E8</color>
+    <color name="headerTextColor">#FFFFFF</color>
+    <color name="headerBackgroundColor">#009ada</color>
+
+    <color name="version">#20000000</color>
+
+    <!--心率-->
+    <color name="bg_color_press">#b6b6b6</color>
+    <color name="dialog_line">#b2b1b1</color>
+
+    <!-- ride -->
+    <color name="ride_title">#ff000000</color>
+    <color name="ride_main_blue">#ff00609d</color>
+    <color name="ride_main_green">#ff059045</color>
+    <color name="ride_main_gray">#ffDFDFDD</color>
+    <color name="ride_black">#ff000000</color>
+    <color name="ride_black_dialog">#dd000000</color>
+
+
+    <color name="ride_db">#DBDBDB</color>
+    <color name="ride_6a">#6AC328</color>
+    <color name="ride_a8">#A8A8A8</color>
+    <color name="ride_dd">#DDDCDC</color>
+    <color name="ride_27">#278CC5</color>
+    <color name="ride_e9">#E9E9E8</color>
+    <color name="ride_81">#81CC49</color>
+    <color name="ride_df">#DFDEDE</color>
+
+    <color name="font.green">#61bf1a</color>
+    <color name="font.blue">#009dff</color>
+    <color name="font.fuchsia">#ff0072</color>
+    <color name="green">#52B615</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="gray_light">#E5E5E5</color>
+    <color name="hist_color">#ffd5fabb</color>
+    <color name="material_drawable_circularprogress_color">@color/green</color>
+    <color name="heart_chart_line_color">@color/black</color>
+
+    <!--定制颜色-->
+    <color name="statusba_color">#eeeeee</color>
+    <color name="gridcolor">#B6D3FD</color>
+    <color name="labelcolor">#000</color>
+    <color name="pathcolor">#7CDF2E</color>
+    <color name="back_color">@color/black</color>
+    <color name="rl_back_color">@color/white</color>
+    <color name="rl_back_topline_color">#FF4A00</color>
+    <color name="return_back_text_color">#36891b</color>
+    <color name="version_back_color">@color/black</color>
+
+    <color name="base_blue">#4BB6B1</color>
+    <color name="indicate_color">#FF6D32</color>
+    <color name="common_bg">#f2f2f2</color>
+</resources>

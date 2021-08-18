@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="statusba_color">#000</color>
+    <color name="base_blue">#4BB6B1</color>
+    <color name="base_gry">#CECECE</color>
+    <color name="sport_text">#545559</color>
+    <color name="gridcolor">#545559</color>
+    <color name="labelcolor">#545559</color>
+    <color name="pathcolor">@color/base_blue</color>
+    <color name="back_color">@color/white</color>
+    <color name="rl_back_color">@color/statusba_color</color>
+    <color name="rl_back_topline_color">@color/base_blue</color>
+    <color name="return_back_text_color">@color/white</color>
+    <color name="version_back_color">@color/white</color>
+    <color name="percent_color">@color/base_blue</color>
+    <color name="gray_light">@color/gridcolor</color>
+    <color name="heart_chart_line_color">@color/base_blue</color>
+    <color name="hist_color">@color/base_blue</color>
+    <color name="material_drawable_circularprogress_color">@color/base_blue</color>
+
+</resources>

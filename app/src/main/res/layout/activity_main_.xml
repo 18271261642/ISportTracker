@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ly_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <RadioGroup
+                android:id="@+id/radio_group_menu_main"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_button_steps"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/walk_top_btn"
+                    android:gravity="center" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_sleep"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/sleep_top_btn"
+                    android:gravity="center" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_heart"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/heart_reat_btn"
+                    android:gravity="center" />
+                <RadioButton
+                    android:id="@+id/radio_button_steps_1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/walk_top_btn"
+                    android:gravity="center" />
+                <RadioButton
+                    android:id="@+id/radio_button_heart_1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/heart_reat_btn"
+                    android:gravity="center" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <com.isport.tracker.view.ShapeImageView
+                    android:contentDescription="head"
+                    android:clickable="true"
+                    android:id="@+id/image_head"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#CCCCCC" />
+
+            <View
+                android:id="@+id/view_checked_main"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/indicate_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp" />
+    <com.isport.tracker.view.MainViewPager
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/ly_main"
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.isport.tracker.view.MainViewPager>
+</RelativeLayout>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+    tools:locale="es">
+            <!--西班牙文-->
+    <string name="name_isport">E-Tracker</string>
+
+    <string name="all_return_back">atrás</string>
+    <string name="action_settings">Ajustes</string>
+
+    <!-- 主界面 -->
+    <string name="menu_main_exit">And then press a return button to exit the application</string>
+
+    <string name="back">atrás</string>
+    <string name="exercise_trend1">lunes</string>
+    <string name="exercise_trend2">martes</string>
+    <string name="exercise_trend3">miércoles</string>
+    <string name="exercise_trend4">jueves</string>
+    <string name="exercise_trend5">viernes</string>
+    <string name="exercise_trend6">sábado</string>
+    <string name="exercise_trend7">domingo</string>
+    
+    <!-- 闹钟 -->
+    <string name="clock_title">recordatorio de alarma</string>
+
+    <!-- 版本更新 -->
+    <string name="update_version_title">Software Update</string>
+    <string name="update_version_content">Find the new version, be sure to update?</string>
+    <string name="update_version_ok">Update</string>
+    <string name="update_version_cancle">Update later</string>
+
+    <!-- 设备连接 -->
+
+    <string name="manage_device_cant_conn_blue">Your device not support Bluetooth 4.0!</string>
+
+    <!-- 设备管理 -->
+    <string name="manage_device_title">BT Pairing</string>
+    <string name="bounding">bounding…</string>
+    <string name="light_screen">por favor iluminará la pantalla</string>
+
+    <!-- 用户管理 -->
+    <string name="user_manage_title">administración de cuentas</string>
+    <string name="user_manage_edit">Edit</string>
+    <string name="user_manage_add_user">Add account</string>
+    <string name="user_manage_quit">Log out</string>
+    
+    <!-- 个人资料 -->
+    <string name="user_info_title">Informaciónes Perso</string>
+    <string name="user_info_nick_title">Alias</string>
+    <string name="user_info_image_title">Foto De Perfil</string>
+    <string name="complete_user_info_hint_nick_name">Introducir alias</string>
+    <string name="set_user_info_sex_title">género</string>
+    <string name="set_user_info_birthday_title">edad</string>
+    <string name="set_user_info_height_title">altura</string>
+    <string name="set_user_info_weight_title">peso</string>
+    <string name="complete_user_info_default_age">30</string>
+    <string name="user_info_man">masculino</string>
+    <string name="user_info_woman">femenino</string>
+    <string name="left_hand">mano izquierda</string>
+    <string name="right_hand">mano derecha</string>
+    <string name="complete_user_info_default_age_unit"></string>
+    <string name="complete_user_info_default_day_target_step">K Pasos / día</string>
+    <string name="complete_user_info_default_height">170</string>
+    <string name="complete_user_info_default_height_unit">cm</string>
+    <string name="complete_user_info_default_weight">65</string>
+    <string name="complete_user_info_default_weight_unit">kg</string>
+    <string name="user_info_take_photo_text">fotografía</string>
+    <string name="user_info_browsing_text">Seleccionar fotos locales</string>
+    <string name="user_info_cancle">cancelar</string>
+    <string name="user_info_done">confirmar</string>
+    <string name="user_info_no_sd_card">La tarjeta de memoria no se encuentra, no puede almacenar fotos!</string>
+    <string name="user_info_set_age_title">Establecer la edad</string>
+    <string name="set_target_title">Establezca metas diarias</string>
+    <string name="user_info_set_height_title">Ajuste la altura</string>
+    <string name="user_info_set_weight_title">peso Set</string>
+    <string name="user_info_set_sex">Ajuste el género</string>
+    
+     <string name="header_hint_refresh_normal">Pulse el botón para sincronizar pulsera</string>
+    <string name="header_hint_refresh_ready">Pulse el botón para sincronizar pulsera</string>
+    <string name="header_hint_refresh_loading">Sincronización&#8230;</string>
+    <string name="footer_hint_load_normal">carga más</string>
+    <string name="footer_hint_load_ready">Lanzamiento para cargar más</string>
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="event">Asuntos</string>
+    <string name="EVENT">ASUNTOS</string>
+    <string name="time">tiempo</string>
+    <string name="repeat">repetición</string>
+    <string name="save">Guardar</string>
+     <string name="sunday">domingo</string>
+    <string name="tuesday">martes</string>
+    <string name="wednesday">miércoles</string>
+    <string name="monday">lunes</string>
+    <string name="thursday">jueves</string>
+    <string name="friday">viernes</string>
+    <string name="saturday">sábado</string>
+    <string name="ok">determinar</string>
+    <string name="alarm_clock_set_successfully">reloj despertador establecido con éxito</string>
+    <string name="alarm_clock_set_failed">ajuste del reloj de alarma falló</string>
+    
+    <string name="binding_is_successful">Emparejado tiene éxito!</string>
+    <string name="Successfully_deleted">Con éxito borrado!</string>
+    <string name="steps_day">pasos</string>
+    <string name="user_information">informacion del usuario</string>
+    <string name="About_us">Acerca de nosotros</string>
+    
+    <string name="disconnect">desconectar</string>
+    <string name="connect">conectar</string>
+    <string name="unbind_success">desvincular el éxito!</string>
+    <string name="connection_successful">conexión con éxito!</string>
+    <string name="setting">ajuste</string>
+    <string name="device">Dispositivo</string>
+    <string name="daily_goal">Meta diaria</string>
+    <string name="defalt_step">7000 pasos</string>
+    <string name="step_length">zancada</string>
+    <string name="wear_way">Use Camino</string>
+    <string name="sedentary_reminder">Recordatorio sedentario</string>
+    <string name="vibration_alarm_clock">Reloj Despertador</string>
+    <string name="restore_default_settings">Restore Default Settings</string>
+    <string name="unbind">no apareados</string>
+    <string name="real_time_synchronization">Tiempo real Sincronización</string>
+    <string name="Detailed">Detallado</string>
+    <string name="mark">Marca</string>
+    <string name="Remind">Recordar</string>
+    <string name="Switch">interruptor</string>
+    <string name="no_movement_time">Sin tiempo de movimiento (minutos)</string>
+    <string name="start_time">Hora De Inicio</string>
+    <string name="end_time">Hora De Finalización</string>
+    <string name="refresh">refrescar</string>
+    <string name="year">año</string>
+    <string name="month">mes</string>
+    <string name="ignore_equipment">ignorar Equipos</string>
+    <string name="binding_equipment">Equipo emparejado</string>
+    <string name="device_id">identificación Del Dispositivo</string>
+    <string name="device_name">Nombre Del Dispositivo</string>
+    <string name="Connected">"    conectado"</string>
+    <string name="please_wait">Por Favor Espere</string>
+    <string name="successful_synchronization">sincronización exitosa</string>
+    <string name="synchronization_failure">La falta de sincronización</string>
+    <string name="setting_wear_way">Configuración Camino Wear</string>
+    <string name="set_the_pace">Establecer Pace</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="visitor_pattern">patrón para visitantes</string>
+    <string name="register_now">Regístrate Ahora</string>
+    <string name="associated_account_login">Asociado Cuenta Entrar</string>
+    <string name="forget_password">Contraseña Olvidada</string>
+     <string name="day">día</string>
+     <string name="week">Semana</string>
+      <string name="target_8_hours">objetivo para 8 horas</string>
+      <string name="sun">Dom</string>
+    <string name="mon">Lun</string>
+    <string name="tue">Mar</string>
+    <string name="wed">Mié</string>
+    <string name="thu">Jue</string>
+    <string name="fri">Vie</string>
+    <string name="sat">Sáb</string>
+    <string name="set_metric">MM/PULG</string>
+     <string name="metric">métrico</string>
+    <string name="Inch">Imperial</string>
+    <string name="clear_data_seccess">Clear Data Seccess</string>
+    <string name="setting_seccess">Configuración Seccess</string>
+    <string name="setting_the_default_setting">Are you sure you are setting the default setting?</string>
+    <string name="one_week">1semana</string>
+    
+    <string name="two_week">2semana</string>
+    
+    <string name="three_week">3semana</string>
+    
+    <string name="four_week">4semana</string>
+    
+    <string name="five_week">5semana</string>
+    
+    <string name="six_week">6semana</string>
+    
+    <string name="seven_week">7semana</string>
+    
+    <string name="eight_week">8semana</string>
+    
+    <string name="nine_week">9semana</string>
+    
+    <string name="ten_week">10semana</string>
+    
+    <string name="eleven_week">11semana</string>
+    
+    <string name="twelve_week">12semana</string>
+    
+    <string name="thirteen_week">13semana</string>
+    
+    <string name="fourteen_week">14semana</string>
+    
+    <string name="fifteen_week">15semana</string>
+    
+    <string name="sixteen_week">16semana</string>
+    
+    <string name="seventeen_week">17semana</string>
+    
+    <string name="eighteen_week">18semana</string>
+    
+    <string name="nineteen_week">19semana</string>
+    
+    <string name="twenty_week">20semana</string>
+    
+    <string name="twenty_one_week">21semana</string>
+    
+    <string name="twenty_two_week">22semana</string>
+    
+    <string name="twenty_three_week">23semana</string>
+    
+    <string name="twenty_four_week">24semana</string>
+    
+    <string name="twenty_five_week">25semana</string>
+    
+    <string name="twenty_six_week">26semana</string>
+    
+    <string name="twenty_seven_week">27semana</string>
+    
+    <string name="twenty_seven_eight_week">28semana</string>
+    
+    <string name="twenty_seven_nine_week">29semana</string>
+    
+    <string name="thirty_week">30semana</string>
+    
+    <string name="thirty_one_week">31semana</string>
+    
+    <string name="thirty_two_week">32semana</string>
+    
+    <string name="thirty_three_week">33semana</string>
+    
+    <string name="thirty_four_week">34semana</string>
+    
+    <string name="thirty_five_week">35semana</string>
+    
+    <string name="thirty_six_week">36semana</string>
+    
+    <string name="thirty_seven_week">37semana</string>
+    
+    <string name="thirty_eight_week">38semana</string>
+    
+    <string name="thirty_nine_week">39semana</string>
+    
+    <string name="forty_week">40semana</string>
+    
+    <string name="forty_one_week">41semana</string>
+    
+    <string name="forty_two_week">42semana</string>
+    
+    <string name="forty_three_week">43semana</string>
+    
+    <string name="forty_four_week">44semana</string>
+    
+    <string name="forty_five_week">45semana</string>
+    
+    <string name="forty_six_week">46semana</string>
+    
+    <string name="forty_seven_week">47semana</string>
+    
+    <string name="forty_eight_wek">48semana</string>
+    
+    <string name="forty_nine_week">49semana</string>
+    
+    <string name="fifty_week">50semana</string>
+    
+    <string name="fifty_one_week">51semana</string>
+    
+    <string name="fifty_two_week">52semana</string>
+    
+    <string name="january">ene</string>
+    
+    <string name="february">feb</string>
+    
+    <string name="march">mar</string>
+    
+    <string name="april">abr</string>
+    
+    <string name="may">may</string>
+    
+    <string name="june">jun</string>
+    
+    <string name="july">jul</string>
+    
+    <string name="august">ago</string>
+    
+    <string name="september">sep</string>
+    
+    <string name="october">oct</string>
+    
+    <string name="november">nov</string>
+    
+    <string name="december">dic</string>
+    
+    <string name="set_personal_data">Conjunto de Datos Personales</string>
+    <string name="confirm">confirmar</string>
+     <string-array name="timezone_values" translatable="false">
+        <item>"China standard time (Beijing)GMT +8"</item>
+        <item>"Yerevan GMT +4"</item>
+        <item>"Oakland GMT +12"</item>
+        <item>"Anchorage GMT -8"</item>
+        <item>"Afghan time GMT +4"</item>
+        <item>"Ala Mutu GMT +6"</item>
+        <item>"Baku GMT +5"</item>
+        <item>"Baghdad GMT +3"</item>
+        <item>"Buenos Aires GMT -3"</item>
+        <item>"Brisbane GMT+10"</item>
+        <item>"Tongatapu GMT+13"</item>
+        <item>"Amman GMT +3"</item>
+        <item>"Cairo GMT +2"</item>
+        <item>"Eastern European standard time GMT +3"</item>
+        <item>"The Atlantic time -4"</item>
+        <item>"Tbilisi GMT +4"</item>
+        <item>"Darwin GMT +9"</item>
+        <item>"Dubai GMT +4"</item>
+        <item>"Cape GMT -1"</item>
+        <item>"Guam GMT +10"</item>
+        <item>"Columbia time GMT -5"</item>
+         <item>"Greenwich time (London)GMT +1"</item>
+         <!--<item>"système métrique"</item>-->
+        <item>"Vladivostok time GMT +11"</item>
+        <item>"Hobart GMT +11"</item>
+        <item>"Calcutta GMT +5"</item>
+        <item>"Kuala Lumpur GMT +8"</item>
+        <item>"Bangkok GMT +7"</item>
+        <item>"New York GMT -4"</item>
+        <item>"Mexico GMT -5"</item>
+        <item>"Chicago GMT -5"</item>
+        <item>"Pacific time GMT -7"</item>
+        <item>"Losangeles GMT -7"</item>
+        <item>"Moscow GMT +4"</item>
+        <item>"Tokyo GMT +9"</item>
+        <item>"Seoul GMT +9"</item>
+        <item>"Honolulu GMT -10"</item>
+        <item>"Sydney GMT +10"</item>
+        <item>"Amazon standard time GMT-4"</item>
+        <item>"Iran standard time GMT +4"</item>
+        
+        <item>"Central European standard time GMT+2"</item>
+         </string-array>
+          <string name="please_connect">Por favor Conectar Dispositivo</string>
+          <string name="cancel">cancelar</string>
+          <string name="your_date_is_not_yet">Su fecha aún no está</string>
+          <string name="a_week">1semana</string>
+
+    <!--Display-->
+    <string name="Display">feria de equipos</string>
+    <string name="Screen">ajustes de la pantalla</string>
+    <!-- Auto Sleep -->
+    <string name="Auto_Sleep">sueño auto</string>
+    <string name="Screen_Set">ajustes de la pantalla</string>
+    <string name="Open_Auto_Sleep">Comience reposo automático</string>
+    <string name="protect_screen">proteger la pantalla</string>
+    <string name="protect_Color">Colores de pantalla</string>
+    <string name="Screen_Black">negro</string>
+    <string name="Screen_White">blanco</string>
+    <string name="Sleep_Time">tiempo de sueño</string>
+    <string name="Sleep_Reminder">Sleep recordar</string>
+    <string name="Lunch_Break">La hora del almuerzo</string>
+    <string name="Sleep_Target">objetivo del sueño</string>
+    <string name="hours">hora</string>
+    <string name="minutes">acta</string>
+    <string name = "lunch_sleep_reminder">El almuerzo recordar</string>
+
+    <!--心率-->
+    <string name="hr_discard">no guardar</string>
+    <string name="hr_save">Guardar</string>
+    <string name="hr_cancel">cancelado</string>
+    <string name="hr_ok">confirmar</string>
+    <string name="hr_dialog_content">Decidido a no guardarlo?</string>
+    <string name="hr_history_title">historia</string>
+    <string name="hr_total_time">duración total</string>
+    <string name="hr_average_bpm">Average BPM</string>
+    <string name="setting_find_device">Buscar dispositivo</string>
+    <string name="setting_auto_save_hr_data">Datos de frecuencia cardiaca se guarda automáticamente</string>
+    <string name="ht_delete_history">Eliminar el registro</string>
+    <string name="ht_open_heart_rate">A corazón abierto</string>
+    <string name="Auto_heartRate">Tasa automática del corazón</string>
+    <string name="Auto_heartRate_title">Tiempo de detección de la frecuencia cardíaca</string>
+    <string name="Auto_heartRate1">Tiempo de detección de la frecuencia cardíaca1</string>
+    <string name="Auto_heartRate2">Tiempo de detección de la frecuencia cardíaca2</string>
+    <string name="Auto_heartRate3">Tiempo de detección de la frecuencia cardíaca3</string>
+    <string name="is_enable">permitir</string>
+    <string name="connect_hr">Por favor, conecte el ritmo cardíaco</string>
+    <string name="hr_start">empezar</string>
+    <string name="hr_end">detener</string>
+
+
+    <!--电话短信-->
+    <string name="call_nitification">llamada telefónica</string>
+    <string name="sms_nitification">notificaciones por SMS</string>
+    <string name="sms_details">detalles SMS</string>
+    <string name="do_not_disturb">No molestar</string>
+    <string name="accessibility">Accesibilidad</string>
+
+
+    <string name="anti_lost_device">anti-perdida</string>
+    <string name="auto_takephoto">cámara automática</string>
+    <string name="switch_camera">conmutación</string>
+    <string name="sleep_quality">La calidad del sueño</string>
+</resources>

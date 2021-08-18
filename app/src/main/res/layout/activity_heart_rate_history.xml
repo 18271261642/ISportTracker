@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/return_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/all_return_back_bg" >
+
+            <ImageView
+                android:id="@+id/return_back_icon"
+                style="@style/return_back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/walknote_icon"
+                style="@style/return_back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/return_back_icon"
+                android:text="@string/all_return_back" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/title_name"
+            style="@style/return_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:textColor="@color/vivi_gray"
+            android:text="@string/hr_history_title" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/image_delete"
+            android:scaleType="center"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_hr_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@color/transparent"
+        android:divider="@color/gray_light"
+        android:dividerHeight="0.5dp"
+        />
+</LinearLayout>

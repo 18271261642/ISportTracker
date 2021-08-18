@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ISportTracker.iml" filepath="$PROJECT_DIR$/.idea/ISportTracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-pdf/ISportTracker.android-pdf.iml" filepath="$PROJECT_DIR$/.idea/modules/android-pdf/ISportTracker.android-pdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ISportTracker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ISportTracker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/isportlibrary/ISportTracker.isportlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/isportlibrary/ISportTracker.isportlibrary.iml" />
+    </modules>
+  </component>
+</project>

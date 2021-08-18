@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+
+    <string name="name_isport">Fitness Tracker Pro</string>
+    <string name="all_return_back_device">Device</string>
+    <string name="return_back_on_user">Personal Stats</string>
+    <string name="return_back_on_version">Version</string>
+    <string name="user_information">Personal Stats</string>
+    <string name="About_us">Version</string>
+    <string name="manage_device_title">Device</string>
+    <string name="basic_setup">BASIC SETUP</string>
+    <string name="advanced_features">ADVANCED FEATURES</string>
+    <string name="connection">CONNECTION</string>
+    <string name="step_length">Stride</string>
+    <string name="do_not_disturb">Notification</string>
+    <string name="unbind">Disconnect</string>
+    <string name="light_sleep_fitness">Light Sleep</string>
+    <string name="deep_sleep_fitness">Deep Sleep</string>
+</resources>

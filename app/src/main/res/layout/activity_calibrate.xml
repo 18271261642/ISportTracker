@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/iv_back"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/calibration"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_round_rec"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.isport.tracker.view.NumberPickerView
+                android:id="@+id/alarm_hour"
+                app:npv_HintText="@string/hour"
+                app:npv_ItemPaddingHorizontal="5dp"
+                app:npv_ItemPaddingVertical="5dp"
+                app:npv_RespondChangeInMainThread="false"
+                app:npv_ShowCount="3"
+                app:npv_TextSizeNormal="16sp"
+                app:npv_TextSizeSelected="20sp"
+                app:npv_WrapSelectorWheel="true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+            </com.isport.tracker.view.NumberPickerView>
+            <com.isport.tracker.view.NumberPickerView
+                android:id="@+id/alarm_min"
+                app:npv_HintText="@string/minute"
+                app:npv_ItemPaddingHorizontal="5dp"
+                app:npv_ItemPaddingVertical="5dp"
+                app:npv_RespondChangeInMainThread="false"
+                app:npv_ShowCount="3"
+                app:npv_TextSizeNormal="16sp"
+                app:npv_TextSizeSelected="20sp"
+                app:npv_WrapSelectorWheel="true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+            </com.isport.tracker.view.NumberPickerView>
+            <com.isport.tracker.view.NumberPickerView
+                android:id="@+id/alarm_sec"
+                app:npv_HintText="@string/second"
+                app:npv_ItemPaddingHorizontal="5dp"
+                app:npv_ItemPaddingVertical="5dp"
+                app:npv_RespondChangeInMainThread="false"
+                app:npv_ShowCount="3"
+                app:npv_TextSizeNormal="16sp"
+                app:npv_TextSizeSelected="20sp"
+                app:npv_WrapSelectorWheel="true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+            </com.isport.tracker.view.NumberPickerView>
+        </LinearLayout>
+        <Button
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_calibrate_confirm"
+            android:onClick="onClick"
+            android:text="@string/confirm"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

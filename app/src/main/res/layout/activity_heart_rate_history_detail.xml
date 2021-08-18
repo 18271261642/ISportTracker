@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/rl_back_color"  >
+
+        <RelativeLayout
+            android:id="@+id/return_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+
+            <TextView
+                android:drawableLeft="@drawable/iv_back"
+                android:id="@+id/walknote_icon"
+                style="@style/return_back_text"
+                android:drawablePadding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/all_return_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_name"
+            style="@style/return_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/hr_history_title" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_heart_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heart_rate_history"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_toRightOf="@+id/iv_heart_rate"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_normal_15"
+            android:layout_centerInParent="true"
+            android:text="2015.10.10"/>
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hr_total_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal_15" />
+
+            <TextView
+                android:id="@+id/tv_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal_15" />
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:id="@+id/tr_total_cal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/calories"
+                android:textSize="@dimen/font_normal_15" />
+
+            <TextView
+                android:id="@+id/tv_total_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal_15" />
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hr_average_bpm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal_15" />
+
+                <TextView
+                    android:id="@+id/tv_avg_bpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal_15" />
+            </TableRow>
+            <TableRow android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hr_max_bpm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal_15" />
+
+                <TextView
+                    android:id="@+id/tv_max_bpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal_15" />
+            </TableRow>
+            <TableRow  android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hr_min_bpm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal_15" />
+
+                <TextView
+                    android:id="@+id/tv_min_bpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal_15" />
+            </TableRow>
+
+        </TableLayout>
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/graph_hrs"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:layout_marginTop="20dp" />
+        <com.isport.tracker.view.HeartChartView
+            android:id="@+id/heart_chart_view"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="220dp" />
+    </LinearLayout>
+
+</ScrollView>

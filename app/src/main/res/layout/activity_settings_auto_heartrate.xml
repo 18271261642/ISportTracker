@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ifavor="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_sleep"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/return_back"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/iv_back"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/Auto_heartRate_title"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_save"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa" />
+
+    <RelativeLayout style="@style/layout_sleep_item" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/is_enable"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <com.isport.tracker.view.EasySwitchButton
+            android:id="@+id/switch_whole_heartRate"
+            ifavor:isOpened="false"
+            ifavor:switch_off="@drawable/ios7_switch_off"
+            ifavor:switch_on="@drawable/ios7_switch_on"
+            style="@style/check_sleep" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layout_sleep_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/text_sleep_item_title"
+                android:text="@string/Auto_heartRate1" />
+
+            <RelativeLayout style="@style/layout_sleep_item" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/switch_heartRate1"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_start_time1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="22:00"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="~"
+                        android:textColor="@color/text_sleep_disable"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="06:00"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+                <com.isport.tracker.view.EasySwitchButton
+                    android:id="@+id/switch_heartRate1"
+                    ifavor:isOpened="false"
+                    ifavor:switch_off="@drawable/ios7_switch_off"
+                    ifavor:switch_on="@drawable/ios7_switch_on"
+                    style="@style/check_sleep"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                style="@style/text_sleep_item_title"
+                android:text="@string/Auto_heartRate2" />
+
+            <RelativeLayout style="@style/layout_sleep_item" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/switch_heartRate2" >
+
+                    <TextView
+                        android:id="@+id/tv_start_time2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="13:00"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="~"
+                        android:textColor="@color/text_sleep_disable"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="14:00"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <com.isport.tracker.view.EasySwitchButton
+                    android:id="@+id/switch_heartRate2"
+                    ifavor:isOpened="false"
+                    ifavor:switch_off="@drawable/ios7_switch_off"
+                    ifavor:switch_on="@drawable/ios7_switch_on"
+                    style="@style/check_sleep" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_sleep_item_title"
+                android:text="@string/Auto_heartRate3" />
+
+            <RelativeLayout style="@style/layout_sleep_item" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/switch_heartRate3" >
+
+                    <TextView
+                        android:id="@+id/tv_start_time3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="13:00"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="~"
+                        android:textColor="@color/text_sleep_disable"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="14:00"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <com.isport.tracker.view.EasySwitchButton
+                    android:id="@+id/switch_heartRate3"
+                    ifavor:isOpened="false"
+                    ifavor:switch_off="@drawable/ios7_switch_off"
+                    ifavor:switch_on="@drawable/ios7_switch_on"
+                    style="@style/check_sleep" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

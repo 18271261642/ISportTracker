@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <corners android:bottomRightRadius="5dp" />
+
+            <solid android:color="@color/bg_dialog_btn_on" />
+        </shape></item>
+    <item android:state_focused="true"><shape>
+            <corners android:bottomRightRadius="5dp" />
+
+            <solid android:color="@color/bg_dialog_btn_on" />
+        </shape></item>
+    <item><shape>
+            <corners android:bottomRightRadius="5dp" />
+
+            <solid android:color="@color/bg_dialog_btn" />
+        </shape></item>
+
+</selector>

@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/layout_ride_title" >
+
+        <TextView
+            android:id="@+id/text_back"
+            style="@style/image_ride_title_left"
+            android:text=""
+            android:drawableLeft="@drawable/button_back"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/image_ride_title_center"
+            android:text="@string/ride_History"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_delete"
+            android:padding="3dp"
+            style="@style/image_ride_title_right"
+            android:background="@drawable/button_ride_delete" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/image_ride_history_item" />
+
+                <TextView
+                    android:id="@+id/text_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="2015/12/1   11:12:32"
+                    android:textColor="@color/ride_black"
+                    android:textSize="15dp" />
+                
+            </LinearLayout>
+
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_Total_Time" />
+
+                <TextView
+                    android:id="@+id/text_time"
+                    style="@style/text_ride_history_item_right"
+                    android:text="00:00:00" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_Total_Distance" />
+
+                <TextView
+                    android:id="@+id/text_distance"
+                    style="@style/text_ride_history_item_right"
+                    android:text="0.00km" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_average_speed" />
+
+                <TextView
+                    android:id="@+id/text_speed"
+                    style="@style/text_ride_history_item_right"
+                    android:text="0.00km/h" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_average_cadence" />
+
+                <TextView
+                    android:id="@+id/text_cadence"
+                    style="@style/text_ride_history_item_right"
+                    android:text="0.00rpm" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_max_speed" />
+
+                <TextView
+                    android:id="@+id/text_speed_max"
+                    style="@style/text_ride_history_item_right"
+                    android:text="0.00km/h" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_min_speed" />
+
+                <TextView
+                    android:id="@+id/text_speed_min"
+                    style="@style/text_ride_history_item_right"
+                    android:text="0.00km/h" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_max_cadence"/>
+
+                <TextView
+                    android:id="@+id/text_cadence_max"
+                    style="@style/text_ride_history_item_right"
+                    android:text="0.00rpm" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_min_cadence" />
+
+                <TextView
+                    android:id="@+id/text_cadence_min"
+                    style="@style/text_ride_history_item_right"
+                    android:text="0.00rpm" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation" tools:locale="zh">
+    <string name="name_isport">ETEK Tracker</string>
+    <string name="all_return_back">返回</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 创建新用户 -->
+    <string name="btn_text_create_user">Create user</string>
+
+    <!-- 设置目标 -->
+    <string name="set_target_title2">Moving target</string>
+    <string name="exercise_target_title">Moving target</string>
+    <string name="exercise_target_walk_number">Steps</string>
+    <string name="exercise_target_default_walk_number">10000</string>
+    <string name="exercise_target_distance">Distance</string>
+    <string name="exercise_target_distance_unit">km</string>
+    <string name="exercise_target_fire">Calories</string>
+    <string name="exercise_target_fire_unit">kcal</string>
+    <string name="exercise_target_save">Save</string>
+    <string name="exercise_target_toast">Save successful!</string>
+    <string name="one_time_start_completed">Done</string>
+    <string name="one_time_start_completed2">Save</string>
+    <string name="update_success">Modify success!</string>
+
+
+    <!-- 主界面 -->
+    <string name="menu_main_date">Today</string>
+    <!-- <string name="yesterday">Yesterday</string> -->
+    <string name="menu_main_exercise">Pedometer</string>
+    <string name="menu_main_sleep">Sleep</string>
+    <string name="menu_main_main">Home page</string>
+    <string name="menu_main_target">Target</string>
+    <string name="menu_main_trend">Trends</string>
+    <string name="menu_main_device_manage">Device Pairing</string>
+    <string name="menu_main_set">Settings</string>
+    <string name="menu_main_exit">再按一次返回键退出应用</string>
+    <string name="menu_main_clock">Alarm reminder</string>
+    <string name="menu_main_phone">Call reminder</string>
+    <string name="menu_main_message">SMS reminder</string>
+    <string name="menu_main_remind_set">Reminding Setting</string>
+    <string name="menu_main_teleoperator_photo">Remote camera</string>
+    <string name="menu_main_play_music">Music Player</string>
+    <string name="menu_main_bind_ok">Connected&#8230;</string>
+
+    <!-- 运动界面 -->
+    <string name="exercise_walk_fire">Calories</string>
+    <string name="exercise_walk_distance">Distance</string>
+    <string name="exercise_walk_time">Duration</string>
+    <string name="exercise_target">Target</string>
+    <string name="exercise_date">Last update：</string>
+    <string name="exercise_no_value">No record~</string>
+
+    <!-- 睡眠界面 -->
+    <string name="sleep_all_time">Total sleep</string>
+    <string name="sleep_time_hour">h</string>
+    <string name="sleep_time_min">min</string>
+    <string name="sleep_start_time">Sleep start</string>
+    <string name="sleep_end_time">Sleep end</string>
+    <string name="sleep_distance_time">Deep Sleep</string>
+    <string name="sleep_light_time">Light sleep</string>
+    <!-- <string name="latestdate">The latest date</string> -->
+
+
+    <!-- 趋势图 -->
+    <string name="exercise_trend_title">Trend</string>
+    <string name="exercise_trend_title_walk">Steps</string>
+    <string name="exercise_trend_title_sleep">Sleep</string>
+    <string name="exercise_trend_title_day">Day</string>
+    <string name="exercise_trend_title_week">Week</string>
+    <string name="exercise_trend_title_month">Month</string>
+    <string name="exercise_trend_unit_hours">h</string>
+    <string name="exercise_trend_unit_min">m</string>
+    <string name="exercise_trend_unit_walk">Step</string>
+    <string name="exercise_trend1">星期一</string>
+    <string name="exercise_trend2">星期二</string>
+    <string name="exercise_trend3">星期三</string>
+    <string name="exercise_trend4">星期四</string>
+    <string name="exercise_trend5">星期五</string>
+    <string name="exercise_trend6">星期六</string>
+    <string name="exercise_trend7">星期天</string>
+
+    <!-- 设置 -->
+    <string name="set_title">Settings</string>
+    <string name="routine_set_content">General Settings</string>
+    <string name="about_walk_note_content">About us</string>
+    <string name="device_update_content">Device Update</string>
+    <string name="feed_back_content">Feedback</string>
+    <string name="message_notify_content">Notification</string>
+    <string name="person_info_content">Personal data</string>
+    <string name="device_show_time_content">Display time</string>
+    <string name="select_language_content">Language Settings</string>
+    <string name="device_update_notify_content">Firmware version</string>
+    <string name="app_update_content">Updated version</string>
+    <string name="set_note_content">Pls connect the device at first &#8230;</string>
+
+    <!-- 常规设置 -->
+    <string name="routine_set_title">General Setting</string>
+    <string name="routine_set_unit">Unit system</string>
+    <string name="routine_set_service_synchronization">Background System</string>
+    <string name="routine_set_unit_title">Unit</string>
+    <string name="routine_set_unit_public">Metric</string>
+    <string name="routine_set_unit_english">Imperial</string>
+    <string name="routine_set_unit_cancle">Cancel</string>
+
+    <!-- 关于我们 -->
+    <string name="about_walknote_title">About us</string>
+    <string name="about_walknote_content1">flyjiang Service</string>
+    <string name="about_walknote_content2">Chomp Technology Limited</string>
+    <string name="about_walknote_content3">Copyright?2014   All Right Reserved</string>
+    <string name="about_us_note_content">Bluetooth Smart health movement monitoring bracelet</string>
+
+    <!-- 语言设置 -->
+    <string name="set_language_title">Language Setting</string>
+    <string name="set_language_characters_checked">Chinese</string>
+    <string name="set_language_auto">Auto</string>
+    <string name="set_language_english_checked">English</string>
+    <string name="set_language_save">Save</string>
+    <string name="set_language_french">French</string>
+
+    <!-- OTaa -->
+    <string name="connecting_device">Connecting device</string>
+    <string name="hardware_version">Hardware version :</string>
+    <string name="new_firmware_version">New fardware version :</string>
+    <string name="firmware_version">Firmware version :</string>
+    <string name="no_update_firmware">No update firmware</string>
+    <string name="butt_update">Update</string>
+    <string name="msg_noscan">Press the button on E-band to try again</string>
+    <string name="abort">Abort</string>
+    <string name="ota_success">Update successful.</string>
+    <string name="ota_faile">Update failed, pls try again.</string>
+    <string name="device_conn_error">Device error, pls try again.</string>
+    <string name="back">返回</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="latestdate">the latest date</string>
+    <string name="sportmode">Sport mode</string>
+    <string name="powersoon">The power will be exhausted very soon</string>
+    <string name="notcardphotos">Cann\'t save picture as SD card is missing!</string>
+    <string name="fwupgradeable">Firmware can be upgraded</string>
+    <string name="fwnewupgradeable">Find new firmware version, update?</string>
+
+    <!-- 消息通知 -->
+    <string name="notify_message_name_title">Notification</string>
+    <string name="message_title">Notification</string>
+    <string name="message_content1">Congratulations, you have finished the target</string>
+    <string name="message_content2">%&#8230;</string>
+    <string name="message_no_content">No news!</string>
+    <string name="title_activity_ota">OtaActivity</string>
+    <string name="msg_scan">Searching device……</string>
+    <string name="msg_syncing">Synchronizing……</string>
+    <string name="msg_querying">Querying……</string>
+    <string name="msg_disconn">Disconnection……</string>
+    <string name="msg_conning">Connecting……</string>
+
+    <!-- 运动详情 -->
+    <string name="exercise_detail_complete_target_title">Target</string>
+    <string name="exercise_detail_walk_number_title">Steps</string>
+    <string name="exercise_detail_walk_dis_title">Distance</string>
+    <string name="exercise_detail_walk_fire_title">Calories</string>
+    <string name="exercise_detail_walk_time_title">Activity Time</string>
+    <string name="exercise_detail_walk_number_unit">Step</string>
+
+    <!-- 开始运动 -->
+    <string name="start_exercise_title_name">Workout</string>
+    <string name="start_exercise_walk_num_title">Steps</string>
+    <string name="start_exercise_walk_dis_title">Distance</string>
+    <string name="start_exercise_walk_fire_title">Calories</string>
+    <string name="start_exercise_speed_title">Instant speed</string>
+    <string name="start_exercise_speed_unit">Step/min</string>
+    <string name="start_exercise_traget_title">Target</string>
+    <string name="start_exercise_traget_unit">Step</string>
+    <string name="start_exercise_pause">Start</string>
+    <string name="start_exercise_start">Pause</string>
+    <string name="start_exercise_exit">Do you sure exit this mode?</string>
+    <string name="start_exercise_exit_title">exit</string>
+    <string name="start_exercise_prompt">prompt</string>
+
+    <!-- 闹钟 -->
+    <string name="clock_title">闹钟提醒</string>
+    <string name="clock_turn_title1">Alarm 1</string>
+    <string name="clock_turn_title2">Alarm 2</string>
+    <string name="clock_turn_title3">Alarm 3</string>
+    <string name="clock_set_time_title">Time setting</string>
+    <string name="clock_set_default_time">07：00</string>
+    <string name="clock_repetition_time_title">选择重复时间</string>
+    <string name="clock_repetition_time_one">周一</string>
+    <string name="clock_repetition_time_two">周二</string>
+    <string name="clock_repetition_time_three">周三</string>
+    <string name="clock_repetition_time_four">周四</string>
+    <string name="clock_repetition_time_firve">周五</string>
+    <string name="clock_repetition_time_six">周六</string>
+    <string name="clock_repetition_time_ser">周日</string>
+    <string name="clock_save">Save</string>
+    <string name="clock_set_time">Select the vibration time</string>
+
+    <!-- 提醒设置 -->
+    <string name="remind_set_title">Reminding Setting</string>
+    <string name="remind_set_mobile_anti_lost">Anti-lost Reminder</string>
+    <string name="remind_set_long_sit">Sedentary Reminder</string>
+    <string name="remind_set_message">SMS reminder</string>
+    <string name="remind_set_call">Call Reminder</string>
+    <string name="remind_set_long_sit_default_time">(30min)</string>
+    <string name="remind_set_long_time_unit">min</string>
+
+    <!-- 久坐提醒 -->
+    <string name="note_sit_long_time_title">Time Setting</string>
+    <string name="note_sit_long_time_content1">30min</string>
+    <string name="note_sit_long_time_content2">60min</string>
+    <string name="note_sit_long_time_content3">90min</string>
+    <string name="note_sit_long_time_cancle">Cancel</string>
+
+    <!-- 设备显示时长 -->
+    <string name="device_show_time_title">Display Time Setting</string>
+    <string name="device_show_time_content1">10s</string>
+    <string name="device_show_time_content2">20s</string>
+    <string name="device_show_time_content3">30s</string>
+    <string name="device_show_time_cancle">Cancel</string>
+
+    <!-- 版本更新 -->
+    <string name="update_version_title">Software Update</string>
+    <string name="update_version_content">Find the new version, be sure to update?</string>
+    <string name="update_version_ok">Update</string>
+    <string name="update_version_cancle">Update later</string>
+    <string name="update_version_current_update">Updating</string>
+    <string name="update_version_cancle_update">Cancel</string>
+    <string name="update_version_finish">Download complete, the updare is being installed.</string>
+    <string name="main_menu_network_connection_timeout">Network connection timeout,pls check your network&#8230;</string>
+    <string name="update_version_loast">The latest version!</string>
+
+    <!-- 睡眠详情 -->
+    <string name="sleep_detail_all_time">Total sleep</string>
+    <string name="sleep_detail_hour">h</string>
+    <string name="sleep_detail_min">min</string>
+    <string name="sleep_detail_to_sleep_time">Sleep time</string>
+    <string name="sleep_detail_real_sleep_time">Actual sleep time</string>
+    <string name="sleep_detail_dep_sleep_time">Deep sleep</string>
+    <string name="sleep_detail_light_sleep_time">Light sleep</string>
+    <string name="sleep_detail_sober_sleep_time">Awake time</string>
+    <string name="sleep_detail_wake_sleep_time">number of awakenings</string>
+    <string name="sleep_detail_count_unit"></string>
+
+    <!-- 设备连接 -->
+
+    <string name="msg_conn_succeed">The connection is successful!</string>
+    <string name="manage_device_cant_conn_blue">Your device not support Bluetooth 4.0!</string>
+    <string name="msg_no_open_bluetooth">The Bluettooth is closed!</string>
+    <string name="msg_no_scan_dervice">No device been searched!</string>
+    <string name="msg_no_binding_dervice">No device been connected!</string>
+
+    <!-- 我的预约 -->
+    <string name="heater_order_title">我的预约</string>
+    <string name="heater_temp_unit">70℃  周一、周二</string>
+
+    <!-- 设备管理 -->
+    <string name="manage_device_title">绑定硬件</string>
+    <string name="bounding">绑定中…</string>
+    <string name="light_screen">请点亮屏幕</string>
+
+    <!-- 用户管理 -->
+    <string name="user_manage_title">账号管理</string>
+    <string name="user_manage_edit">编辑</string>
+    <string name="user_manage_add_user">添加账号</string>
+    <string name="user_manage_quit">退出登录</string>
+
+    <!-- 个人资料 -->
+    <string name="user_info_title">个人资料</string>
+    <string name="user_info_nick_title">昵称</string>
+    <string name="user_info_image_title">头像</string>
+    <string name="complete_user_info_title">完善个人资料</string>
+    <string name="complete_user_info_hint_nick_name">请输入昵称</string>
+    <string name="set_user_info_sex_title">性别</string>
+    <string name="set_user_info_birthday_title">年龄</string>
+    <string name="set_user_info_height_title">身高</string>
+    <string name="set_user_info_weight_title">体重</string>
+    <string name="set_metric">公/英制</string>
+    <string name="metric">公制</string>
+    <string name="Inch">英制</string>
+    <string name="complete_user_info_default_age">35</string>
+    <string name="user_info_man">男</string>
+    <string name="user_info_woman">女</string>
+    <string name="left_hand">左手</string>
+    <string name="right_hand">右手</string>
+    <string name="complete_user_info_default_age_unit">岁</string>
+    <string name="complete_user_info_default_day_target_step">K步/天</string>
+    <string name="complete_user_info_default_height">170</string>
+    <string name="complete_user_info_default_height_unit">cm</string>
+    <string name="complete_user_info_default_weight">65</string>
+    <string name="complete_user_info_default_weight_unit">kg</string>
+    <string name="user_info_take_photo_text">拍照</string>
+    <string name="user_info_browsing_text">从相册选择</string>
+    <string name="user_info_cancle">取消</string>
+    <string name="user_info_done">确定</string>
+    <string name="user_info_no_sd_card">未找到存储卡，无法存储照片！</string>
+    <string name="user_info_set_age_title">设置年龄</string>
+    <string name="set_target_title">设置每日目标</string>
+    <string name="user_info_set_height_title">设置身高</string>
+    <string name="user_info_set_weight_title">设置体重</string>
+    <string name="user_info_set_sex">设置性别</string>
+
+    <!-- Service -->
+    <string name="service_update_ok">已经同步完成！</string>
+    <string name="service_updated">已经同步，没有需要同步的数据！</string>
+    <string name="header_hint_refresh_normal">请按下设备按键进行同步</string>
+    <string name="header_hint_refresh_ready">请按下设备按键进行同步</string>
+    <string name="header_hint_refresh_loading">同步中&#8230;</string>
+    <string name="header_hint_refresh_time">时间：</string>
+    <string name="footer_hint_load_normal">Load more</string>
+    <string name="footer_hint_load_ready">Release to load more</string>
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="event">事件</string>
+    <string name="EVENT">event</string>
+    <string name="time">时间</string>
+    <string name="repeat">重复</string>
+    <string name="save">保存</string>
+    <string name="sunday">星期日</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="monday">星期一</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="ok">确定</string>
+    <string name="alarm_clock_set_successfully">闹钟设置成功</string>
+    <string name="alarm_clock_set_failed">闹钟设置失败</string>
+    <string name="binding_is_successful">绑定成功！</string>
+    <string name="binding_is_fail">绑定失败！</string>
+    <string name="no_device">没有发现设备</string>
+    <string name="Successfully_deleted">删除成功！</string>
+    <string name="steps_day">步</string>
+    <string name="account_management">账号管理</string>
+    <string name="news">消息</string>
+    <string name="friend">朋友</string>
+    <string name="Love_sports_mall">爱运动商城</string>
+    <string name="user_information">用户信息</string>
+    <string name="About_us">关于我们</string>
+    <string name="Version">版本</string>
+    <string name="seeking_praise">求点赞</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="about_love_sports">关于爱运动</string>
+    <string name="disconnect">断开连接</string>
+    <string name="connect">连接设备</string>
+    <string name="please_connect">没有连接设备，不能进行相应的设置</string>
+    <string name="please_bind">请先绑定设备</string>
+    <string name="unbind_success">解除绑定成功！</string>
+    <string name="connection_successful">连接成功！</string>
+    <string name="disconnection_successful">断开连接成功！</string>
+    <string name="birth_date">出生日期</string>
+    <string name="setting">设置</string>
+    <string name="device">设备</string>
+    <string name="daily_goal">每日目标</string>
+    <string name="defalt_step">7000步</string>
+    <string name="step_length">步距</string>
+    <string name="wear_way">佩戴方式</string>
+    <string name="sedentary_reminder">久坐提醒</string>
+    <string name="vibration_alarm_clock">震动闹钟</string>
+    <string name="real_time_synchronization">实时同步</string>
+    <string name="firmware_upgrade">固件升级</string>
+    <string name="restore_default_settings">恢复到默认设置</string>
+    <string name="unbind">解除绑定</string>
+    <string name="Detailed">详细</string>
+    <string name="mark">标志</string>
+    <string name="Remind">提醒</string>
+    <string name="Switch">开关</string>
+    <string name="no_movement_time">不运动时间(分钟)</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="refresh">刷新</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="ignore_equipment">忽略此设备</string>
+    <string name="binding_equipment">绑定此设备</string>
+    <string name="device_id">设备ID</string>
+    <string name="device_name">设备名称</string>
+    <string name="Connected">"    已连接"</string>
+    <string name="please_wait">请稍候</string>
+    <string name="successful_synchronization">数据同步成功</string>
+    <string name="synchronization_failure">同步失败</string>
+    <string name="setting_wear_way">设置佩戴方式</string>
+    <string name="setting_seccess">设置成功</string>
+    <string name="set_the_pace">设置步距</string>
+    <string name="login">登    录</string>
+    <string name="visitor_pattern">访客模式</string>
+    <string name="register_now">立即注册</string>
+    <string name="associated_account_login">关联账号登陆</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="day">日</string>
+    <string name="week">周</string>
+    <string name="target_8_hours">目标8小时</string>
+    <string name="sun">日</string>
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+    <string name="clear_data_seccess">数据清除成功</string>
+    <string name="setting_the_default_setting">确定恢复默认设置吗？</string>
+    <string name="font_path">fonts/trebucbd.ttf</string>
+    <string name="normal_font_path">fonts/trebuc.ttf</string>
+    <string name="no_sensor_found">\nScanning&#8230;\n\nNo sensor found!\n</string>
+    <string name="action_connect">CONNECT</string>
+    <string name="action_disconnect">DISCONNECT</string>
+    <string name="battery">%d%%</string>
+    <string name="not_available">n/a</string>
+
+
+    <string name="no_ble">Device doesn\'t have BLE support!</string>
+
+    <string name="one_week">1周</string>
+
+    <string name="two_week">2周</string>
+
+    <string name="three_week">3周</string>
+
+    <string name="four_week">4周</string>
+
+    <string name="five_week">5周</string>
+
+    <string name="six_week">6周</string>
+
+    <string name="seven_week">7周</string>
+
+    <string name="eight_week">8周</string>
+
+    <string name="nine_week">9周</string>
+
+    <string name="ten_week">10周</string>
+
+    <string name="eleven_week">11周</string>
+
+    <string name="twelve_week">12周</string>
+
+    <string name="thirteen_week">13周</string>
+
+    <string name="fourteen_week">14周</string>
+
+    <string name="fifteen_week">15周</string>
+
+    <string name="sixteen_week">16周</string>
+
+    <string name="seventeen_week">17周</string>
+
+    <string name="eighteen_week">18周</string>
+
+    <string name="nineteen_week">19周</string>
+
+    <string name="twenty_week">20周</string>
+
+    <string name="twenty_one_week">21周</string>
+
+    <string name="twenty_two_week">22周</string>
+
+    <string name="twenty_three_week">23周</string>
+
+    <string name="twenty_four_week">24周</string>
+
+    <string name="twenty_five_week">25周</string>
+
+    <string name="twenty_six_week">26周</string>
+
+    <string name="twenty_seven_week">27周</string>
+
+    <string name="twenty_seven_eight_week">28周</string>
+
+    <string name="twenty_seven_nine_week">29周</string>
+
+    <string name="thirty_week">30周</string>
+
+    <string name="thirty_one_week">31周</string>
+
+    <string name="thirty_two_week">32周</string>
+
+    <string name="thirty_three_week">33周</string>
+
+    <string name="thirty_four_week">34周</string>
+
+    <string name="thirty_five_week">35周</string>
+
+    <string name="thirty_six_week">36周</string>
+
+    <string name="thirty_seven_week">37周</string>
+
+    <string name="thirty_eight_week">38周</string>
+
+    <string name="thirty_nine_week">39周</string>
+
+    <string name="forty_week">40周</string>
+
+    <string name="forty_one_week">41周</string>
+
+    <string name="forty_two_week">42周</string>
+
+    <string name="forty_three_week">43周</string>
+
+    <string name="forty_four_week">44周</string>
+
+    <string name="forty_five_week">45周</string>
+
+    <string name="forty_six_week">46周</string>
+
+    <string name="forty_seven_week">47周</string>
+
+    <string name="forty_eight_wek">48周</string>
+
+    <string name="forty_nine_week">49周</string>
+
+    <string name="fifty_week">50周</string>
+
+    <string name="fifty_one_week">51周</string>
+
+    <string name="fifty_two_week">52周</string>
+
+    <string name="january">1月</string>
+
+    <string name="february">2月</string>
+
+    <string name="march">3月</string>
+
+    <string name="april">4月</string>
+
+    <string name="may">5月</string>
+
+    <string name="june">6月</string>
+
+    <string name="july">7月</string>
+
+    <string name="august">8月</string>
+
+    <string name="september">9月</string>
+
+    <string name="october">10月</string>
+
+    <string name="november">11月</string>
+
+    <string name="december">12月</string>
+
+    <string name="set_personal_data">设置个人资料</string>
+
+    <string name="confirm">完成</string>
+    <string name="your_date_is_not_yet">您选择日期还没到</string>
+    <string name="a_week">1周</string>
+
+    <!--Display-->
+    <string name="Display">显示设置</string>
+    <string name="Screen">屏幕设置</string>
+
+    <!-- Auto Sleep -->
+    <string name="Auto_Sleep">自动睡眠</string>
+    <string name="Screen_Set">屏幕设置</string>
+    <string name="Open_Auto_Sleep">启动自动睡眠</string>
+    <string name="protect_screen">屏幕保护</string>
+    <string name="protect_Color">屏幕颜色</string>
+    <string name="Screen_Black">黑色</string>
+    <string name="Screen_White">白色</string>
+    <string name="Sleep_Time">睡眠时间</string>
+    <string name="Sleep_Reminder">睡眠提醒</string>
+    <string name="Lunch_Break">午休时间</string>
+    <string name="Sleep_Target">睡眠目标</string>
+    <string name="Lunch_reminder">午休提醒</string>
+    <string name="sleep_quality">睡眠质量</string>
+    <string name="hours">小时</string>
+    <string name="minutes">分</string>
+
+    <!--心率-->
+    <string name="hr_discard">不保存</string>
+    <string name="hr_save">保存</string>
+    <string name="hr_cancel">取消</string>
+    <string name="hr_ok">确认</string>
+    <string name="hr_dialog_content">确定不保存吗?</string>
+    <string name="hr_history_title">历史记录</string>
+    <string name="hr_total_time">总时长</string>
+    <string name="hr_average_bpm">Average BPM</string>
+    <string name="setting_find_device">查找设备</string>
+    <string name="setting_auto_save_hr_data">自动保存心率数据</string>
+    <string name="ht_delete_history">删除该记录</string>
+    <string name="ht_open_heart_rate">请打开心率</string>
+    <string name="Auto_heartRate">自动心率测试</string>
+    <string name="Auto_heartRate_title">定时心率检测</string>
+    <string name="lunch_sleep_reminder">午休提醒</string>
+    <!--<string name="Auto_heartRate1">定时心率检测1</string>-->
+    <!--<string name="Auto_heartRate2">定时心率检测2</string>-->
+    <!--<string name="Auto_heartRate3">定时心率检测3</string>-->
+
+    <string name="Auto_heartRate1">1st Interval</string>
+    <string name="Auto_heartRate2">2nd Intervalc</string>
+    <string name="Auto_heartRate3">3rd Interval</string>
+
+
+    <string name="is_enable">启用</string>
+    <string name="connect_hr">请连接心率</string>
+    <string name="hr_start">开始</string>
+    <string name="hr_end">结束</string>
+
+
+    <string name="accessibility">多媒体控制</string>
+    <string name="anti_lost_device">防丢提醒</string>
+    <string name="do_not_disturb">勿扰模式</string>
+    <string name="call_nitification">来电提醒</string>
+    <string name="sms_nitification">信息提醒</string>
+    <string name="sms_details">信息内容</string>
+
+</resources>

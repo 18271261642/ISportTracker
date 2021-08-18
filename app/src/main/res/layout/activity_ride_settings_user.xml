@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/layout_ride_title" >
+
+        <TextView
+            android:id="@+id/text_back"
+            style="@style/image_ride_title_left"
+            android:drawableLeft="@drawable/button_back"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/image_ride_title_center"
+            android:text="@string/ride_Userinfo"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/button_save"
+            style="@style/image_ride_title_right"
+            android:text="@string/ride_Save"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title" >
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                style="@style/layout_ride_history_item"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_Unit_of_Measure" />
+
+                <TextView
+                    android:id="@+id/text_unit"
+                    style="@style/text_ride_history_item_right"
+                    android:text="00:00:00" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_Birthday" />
+
+                <TextView
+                    android:id="@+id/text_birthday"
+                    style="@style/text_ride_history_item_right"
+                    android:text="0000-00-00" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_Height" />
+
+                <TextView
+                    android:id="@+id/text_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/text_height_unit"
+                    android:padding="5dp"
+                    android:text="175"
+                    android:textColor="@color/ride_black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/text_height_unit"
+                    style="@style/text_ride_history_item_right"
+                    android:text="@string/ride_cm" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_Weight" />
+
+                <TextView
+                    android:id="@+id/text_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/text_weight_unit"
+                    android:padding="5dp"
+                    android:text="70"
+                    android:textColor="@color/ride_black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/text_weight_unit"
+                    style="@style/text_ride_history_item_right"
+                    android:text="kg" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+
+            <RelativeLayout style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_Gender" />
+
+                <TextView
+                    android:id="@+id/text_gender"
+                    style="@style/text_ride_history_item_right"
+                    android:text="@string/ride_Female" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+
+            <RelativeLayout 
+                android:id="@+id/layout_size"
+                style="@style/layout_ride_history_item" >
+
+                <TextView
+                    style="@style/text_ride_history_item_left"
+                    android:text="@string/ride_Bike_Tire_size" />
+
+                <TextView
+                    android:id="@+id/text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/text_size_unit"
+                    android:padding="5dp"
+                    android:textColor="@color/ride_black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:id="@+id/edit_size"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/text_size_unit"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:labelFor="@+id/edit_size"
+                    android:maxLength="4"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/text_size_unit"
+                    style="@style/text_ride_history_item_right"
+                    android:text="mm" />
+            </RelativeLayout>
+
+            <View style="@style/line_ride_history_item" />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_ride_save" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_wheel_goal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <include layout="@layout/view_one_wheel" />
+    </RelativeLayout>
+
+</RelativeLayout>

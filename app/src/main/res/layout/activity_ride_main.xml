@@ -1,0 +1,426 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_root"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/layout_ride_title" >
+
+        <ImageView
+            android:id="@+id/image_setting"
+            style="@style/image_ride_title_left"
+            android:contentDescription="@null"
+            android:src="@drawable/button_ride_setting" />
+
+        <ImageView
+            style="@style/image_ride_title_center"
+            android:contentDescription="@null"
+            android:src="@drawable/image_ride_bicycle" />
+
+        <ImageView
+            android:id="@+id/image_history"
+            style="@style/image_ride_title_right"
+            android:contentDescription="@null"
+            android:src="@drawable/button_ride_history" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="8dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/ride_main_blue"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_value_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_label_S"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:text="Speed(km/h)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/ride_main_green"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_cadence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="--"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_value_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/ride_cadence_rpm"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/ride_main_gray"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="00:00"
+                        android:textColor="@color/ride_black"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_value_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/ride_Time"
+                        android:textColor="@color/ride_black"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/ride_main_gray"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0.0"
+                        android:textColor="@color/ride_black"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_value_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_label_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Distance(km)"
+                        android:textColor="@color/ride_black"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/line_ride_h"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="3dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_speed_average"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="0.0"
+                        android:textColor="@color/ride_main_blue"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_value_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_label_A_S"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Ø Speed(km/h)"
+                        android:textColor="@color/ride_main_blue"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/ride_black" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_cadence_average"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/ride_main_green"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_value_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/ride_average_cadence_rpm"
+                        android:textColor="@color/ride_main_green"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_ride_h" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_speed_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="0.0"
+                        android:textColor="@color/ride_main_blue"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_value_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_label_MAX_S"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Max Speed(km/h)"
+                        android:textColor="@color/ride_main_blue"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/ride_black" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_cadence_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/ride_main_green"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_value_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/ride_max_cadence_rpm"
+                        android:textColor="@color/ride_main_green"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_ride_h" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_speed_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="0.0"
+                        android:textColor="@color/ride_main_blue"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_value_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_label_MIN_S"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Min Speed(km/h)"
+                        android:textColor="@color/ride_main_blue"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/ride_black" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_cadence_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/ride_main_green"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_value_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/ride_min_cadence_rpm"
+                        android:textColor="@color/ride_main_green"
+                        android:layout_marginTop="@dimen/marginTop_label"
+                        android:textSize="@dimen/textSize_label" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_ride_h" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/switch_play"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector_ride_play_parse"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:padding="5dp"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ImageView
+                    android:id="@+id/image_play_black"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_ride_play_b"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:padding="5dp"
+                    
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/image_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:src="@drawable/button_ride_finish"
+        android:visibility="gone" />
+
+</RelativeLayout>

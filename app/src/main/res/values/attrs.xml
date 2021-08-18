@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShapeImageView">
+        <attr name="siv_border_width" format="dimension"/><!-- border width -->
+        <attr name="siv_border_color" format="color"/><!-- border color -->
+        <attr name="siv_border_overlay" format="boolean"/> <!-- shape type -->
+        <attr name="siv_round_radius_x" format="dimension"/>
+        <attr name="siv_round_radius_y" format="dimension"/>
+        <attr name="siv_shape_type" format="integer"/><!-- rectange or circle-->
+        <attr name="siv_background_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="WheelView">
+        <attr name="wheelBackground" format="reference|color"/><!-- 背景资源 -->
+        <attr name="wheelSelectedBg" format="reference|color"/><!-- 选中项资源 -->
+        <attr name="wheelMarginLeft" format="dimension"/>
+        <attr name="wheelMarginRight" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension"/>
+        <attr name="border_inside_color" format="color"/>
+        <attr name="border_outside_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="ForegroundRelativeLayout">
+        <attr name="foreground" format="reference|color"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CircularProgressDrawable">
+        <attr name="cpd_padding" format="reference|dimension"/>
+        <attr name="cpd_minSweepAngle" format="reference|integer"/>
+        <attr name="cpd_maxSweepAngle" format="reference|integer"/>
+        <attr name="cpd_strokeSize" format="reference|dimension"/>
+        <attr name="cpd_strokeColor" format="reference|color"/>
+        <attr name="cpd_initialAngle" format="reference|integer"/>
+        <attr name="cpd_rotateDuration" format="reference|integer"/>
+        <attr name="cpd_transformDuration" format="reference|integer"/>
+        <attr name="cpd_keepDuration" format="reference|integer"/>
+        <attr name="cpd_transformInterpolator" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="isOpened" format="boolean"/>
+        <attr name="slide_button" format="reference"/>
+        <attr name="switch_background" format="reference"/>
+        <attr name="switch_on" format="reference"/>
+        <attr name="switch_off" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="NumberPickerView">
+        <!--set number of item displayed, default is 3-->
+        <attr name="npv_ShowCount" format="reference|integer"/>
+        <!--set if show divider, default is true-->
+        <attr name="npv_ShowDivider" format="reference|boolean"/>
+        <attr name="npv_DividerColor" format="reference|color"/>
+        <attr name="npv_DividerMarginLeft" format="reference|dimension"/>
+        <attr name="npv_DividerMarginRight" format="reference|dimension"/>
+        <attr name="npv_DividerHeight" format="reference|dimension"/>
+        <attr name="npv_TextColorNormal" format="reference|color"/>
+        <attr name="npv_TextColorSelected" format="reference|color"/>
+        <attr name="npv_TextColorHint" format="reference|color"/>
+        <attr name="npv_TextSizeNormal" format="reference|dimension"/>
+        <attr name="npv_TextSizeSelected" format="reference|dimension"/>
+        <attr name="npv_TextSizeHint" format="reference|dimension"/>
+        <attr name="npv_TextArray" format="reference"/>
+        <attr name="npv_MinValue" format="reference|integer"/>
+        <attr name="npv_MaxValue" format="reference|integer"/>
+        <attr name="npv_WrapSelectorWheel" format="reference|boolean"/>
+        <attr name="npv_RespondChangeOnDetached" format="reference|boolean"/>
+        <attr name="npv_HintText" format="reference|string"/>
+        <attr name="npv_EmptyItemHint" format="reference|string"/>
+        <attr name="npv_MarginStartOfHint" format="reference|dimension"/>
+        <attr name="npv_MarginEndOfHint" format="reference|dimension"/>
+        <attr name="npv_ItemPaddingHorizontal" format="reference|dimension"/>
+        <attr name="npv_ItemPaddingVertical" format="reference|dimension"/>
+        <attr name="npv_RespondChangeInMainThread" format="reference|boolean"/>
+        <attr name="npv_TextEllipsize" format="reference|string"/>
+
+        <!--just used to measure maxWidth for wrap_content without hint,
+            the string array will never be displayed.
+            you can set this attr if you want to keep the wraped numberpickerview
+            width unchanged when alter the content list-->
+        <attr name="npv_AlternativeTextArrayWithMeasureHint" format="reference"/>
+        <attr name="npv_AlternativeTextArrayWithoutMeasureHint" format="reference"/>
+        <!--the max length of hint content-->
+        <attr name="npv_AlternativeHint" format="reference|string"/>
+    </declare-styleable>
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="is_need_title" format="boolean"/>
+        <attr name="is_need_content" format="boolean"/>
+        <attr name="is_need_unit" format="boolean"/>
+        <attr name="is_need_dial" format="boolean"/>
+        <attr name="string_title" format="string"/>
+        <attr name="string_unit" format="string"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+    </declare-styleable>
+</resources>

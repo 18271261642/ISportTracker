@@ -1,0 +1,77 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="layout_ride_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/ride_title</item>
+    </style>
+    <style name="image_ride_title_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="image_ride_title_center">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="image_ride_title_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <!-- history -->
+    <style name="layout_ride_history_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    <style name="text_ride_history_item_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/ride_black</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <style name="text_ride_history_item_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">5dp</item>
+        
+        <item name="android:textColor">@color/ride_black</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <style name="line_ride_history_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@color/ride_black</item>
+    </style>
+    <style name="line_ride_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/ride_black</item>
+    </style>
+    
+    <style name="dialog_transparent" parent="@android:style/Theme.Holo.Light.Dialog">  
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <item name="android:windowFrame">@null</item>  
+        <!--是否有标题 -->  
+        <item name="android:windowNoTitle">true</item>  
+    </style>  
+    
+    <style name="AnimTools" parent="@android:style/Animation">  
+      <item name="android:windowEnterAnimation">@anim/popwin_in</item>  
+      <item name="android:windowExitAnimation">@anim/popwin_out</item>  
+  </style>
+    
+</resources>

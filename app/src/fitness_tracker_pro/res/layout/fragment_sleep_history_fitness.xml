@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+              android:gravity="center"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_sleep_history_top"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/deep_display"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/deep"
+            android:textColor="@color/sport_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableLeft="@drawable/light_display"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/light"
+            android:textColor="@color/sport_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/awake_display"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/awake"
+            android:textColor="@color/sport_text"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/kk"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/ll_sleep_history_top"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/logo_isport"/>
+
+    <LinearLayout
+        android:id="@+id/ll_sleep_history_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kk"
+        android:orientation="vertical">
+
+        <View
+            style="@style/divide_horizontal_line_style"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/relativeLayout"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/width_weight_style"
+                android:drawableLeft="@drawable/deep_display"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="@string/deep"
+                android:textColor="@color/sport_text"
+                android:textSize="16sp"/>
+
+            <View
+                style="@style/divide_vertical_line_style"></View>
+
+            <TextView
+                style="@style/width_weight_style"
+                android:drawableLeft="@drawable/light_display"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="@string/light"
+                android:textColor="@color/sport_text"
+                android:textSize="16sp"/>
+
+            <View
+                style="@style/divide_vertical_line_style"></View>
+
+            <TextView
+                style="@style/width_weight_style"
+                android:drawableLeft="@drawable/awake_display"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="@string/awake"
+                android:textColor="@color/sport_text"/>
+        </LinearLayout>
+
+        <View
+            style="@style/divide_horizontal_line_style"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/relativeLayout"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/width_weight_style"
+                android:drawableLeft="@drawable/deep_display"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="@string/deep"
+                android:textColor="@color/sport_text"
+                android:textSize="16sp"/>
+
+            <View
+                style="@style/divide_vertical_line_style"></View>
+
+            <TextView
+                style="@style/width_weight_style"
+                android:drawableLeft="@drawable/light_display"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="@string/light"
+                android:textColor="@color/sport_text"
+                android:textSize="16sp"/>
+
+            <View
+                style="@style/divide_vertical_line_style"></View>
+
+            <TextView
+                style="@style/width_weight_style"
+                android:drawableLeft="@drawable/awake_display"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="@string/awake"
+                android:textColor="@color/sport_text"/>
+        </LinearLayout>
+
+        <View
+            style="@style/divide_horizontal_line_style"></View>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_sleep_history_bottom"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/ll_sleep_history_display"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:checkedButton="@+id/exercise_total_steps"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_sleep_day"
+            style="@style/width_weight_style"
+            android:button="@null"
+            android:drawableTop="@drawable/sleep_oneday_btn"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/red_gray_color"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_sleep_week"
+            style="@style/width_weight_style"
+            android:button="@null"
+            android:drawableTop="@drawable/sleep_oneweek_btn"
+            android:gravity="center"
+            android:text="@string/week"
+            android:textColor="@color/red_gray_color"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_sleep_month"
+            style="@style/width_weight_style"
+            android:button="@null"
+            android:drawableTop="@drawable/sleep_onemonth_btn"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/red_gray_color"
+            android:textSize="14sp"/>
+    </RadioGroup>
+</LinearLayout>

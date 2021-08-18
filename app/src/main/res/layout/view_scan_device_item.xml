@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_value_mid_user_info_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/manage_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:gravity="bottom"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textColor="#6b6b6b"
+        android:textSize="16sp" />
+    
+    <View 
+        android:layout_width="0dp"
+        android:layout_weight="1.0"
+        android:layout_height="match_parent"/>
+    
+    <ImageView 
+        android:id="@+id/bind_device_item_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/device_is_bind_icon"
+        android:contentDescription="@drawable/ic_launcher"/>
+    
+    <ImageView 
+        android:id="@+id/bind_device_item_rssi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_rssi_3_bars"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@drawable/ic_launcher"/>
+    
+    <ImageView 
+        android:id="@+id/bind_device_item_detail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/bind_detail_icon"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@drawable/ic_launcher"/>
+
+</LinearLayout>

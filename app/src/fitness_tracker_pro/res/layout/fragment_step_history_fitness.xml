@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/step_history_top_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/iv_back"
+            android:visibility="gone"/>
+
+        <RadioGroup
+            android:id="@+id/chart_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:checkedButton="@+id/day_rb"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/day_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/day_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/day"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/day_week"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/week_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/week"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/day_every_week"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/week_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/a_week"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/day_month"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/month_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/month"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/step_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/step_left"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/exercise_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/step_history_bg"
+                android:textColor="@color/sport_text"
+                android:text="@string/day"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/step_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/step_right"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/horizontalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingRight="10dp"
+            android:src="@drawable/rotate_img"/>
+    </RelativeLayout>
+
+    <androidx.core.view.ViewPager
+        android:id="@+id/msviewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_below="@+id/foot_rg"
+        android:flipInterval="300"
+        android:persistentDrawingCache="animation"/>
+    <!--
+         <com.cn.zhihengchuang.walkbank.view.AreaChart03View
+        android:id="@+id/chart_area"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/foot_rg"
+        android:layout_marginBottom="20dp" />
+    -->
+
+    <RadioGroup
+        android:id="@+id/hostory_foot_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:checkedButton="@+id/exercise_hostory_steps"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/exercise_hostory_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableLeft="@drawable/hostory_walk_btn"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textColor="@color/red_gray_color"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/exercise_hostory_carles"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableLeft="@drawable/hostory_fire_btn"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColor="@color/red_gray_color"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/exercise_hostory_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableLeft="@drawable/hostory_dis_btn"
+            android:drawablePadding="3dp"
+            android:gravity="left"
+            android:textColor="@color/red_gray_color"/>
+    </RadioGroup>
+
+</LinearLayout>

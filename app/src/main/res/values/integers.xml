@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pathShader00">0x00DDF9C7</integer>
+    <integer name="pathShaderff">0xffDDF9C7</integer>
+</resources>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.isport.tracker">
+
+    <!--您的应用清单请求“通话记录”权限组（例如 READ_CALL_LOG、WRITE_CALL_LOG、ROCESS_OUTGOING_CALLS）	必须由用户主动将应用注册为设备的默认电话或辅助处理程序。-->
+    <!--您的应用清单请求“短信”权限组（例如 READ_SMS、SEND_SMS、WRITE_SMS、RECEIVE_SMS、RECEIVE_WAP_PUSH、RECEIVE_MMS）	必须由用户主动将应用注册为设备的默认短信或辅助处理程序。-->
+
+    <!--    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+        <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+        <uses-permission android:name="android.permission.READ_SMS"/>
+        <uses-permission android:name="android.permission.WRITE_SMS"/>
+        <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>&lt;!&ndash;添加权限&ndash;&gt;-->
+
+
+   <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.media.session.MediaController" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <!--<uses-feature android:name="android.hardware.camera.EACCES" />-->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <!-- fir -->
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--android:hardwareAccelerated="true"-->
+
+
+    <application
+        android:name="com.isport.tracker.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_isport"
+        android:label="@string/name_isport"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <!-- Show apps list whose notification will be sent to ble  -->
+        <meta-data
+            android:name="isport.pklist"
+            android:resource="@xml/accessibility_packlist" />
+
+        <!--<meta-data
+            android:name="isporttracker"
+            android:value="${PRODUCT}"
+            />-->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value=" e249487bda6ed2680c799174b3c6752a ">
+        </meta-data>
+
+        <activity
+            android:name="com.isport.tracker.main.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.CropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.isport.tracker.main.MainActivityGroup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.MenuSetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.settings.ManageDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.AlarmItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.isport.tracker.main.BindDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.SleepActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.BluetoothSwitchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.CalibrateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.HeartHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.HeartRateHistoryNActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.isport.tracker.main.settings.LogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.isport.tracker.main.HeartRateHistoryDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.HeartRateAutoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.ScreenSetting"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.isport.tracker.main.CalendarActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog3" />
+        <activity
+            android:name="com.isport.tracker.main.CalendarTestActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog3" />
+        <activity
+            android:name="com.isport.tracker.main.HorizontalScreenActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.isport.tracker.main.settings.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.DeviceTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.ReminderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogTakePhoto"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog2" />
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetAge"
+            android:label="@string/user_info_set_age_title"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetWeatherActivity"
+            android:label="@string/user_info_set_age_title"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetStrWeatherActivity"
+            android:label="@string/user_info_set_age_title"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetTime"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetTargetActivity"
+            android:label="@string/set_target_title"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+
+
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetTimingAlarm"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+        <!--android:label="@string/user_info_set_height_title"-->
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetHeight"
+            android:label="@string/set_user_info_height_title"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetWeight"
+            android:label="@string/user_info_set_weight_title"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name="com.isport.tracker.dialogActivity.DialogSetSex"
+            android:screenOrientation="behind"
+            android:theme="@style/Dialog" />
+
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.AlarmActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.isport.tracker.main.settings.ActivityDeviceSetting"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.RaiseHandSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.RaiseHandWithtimeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.DisturbWithtimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.AutomaticHeartRateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.settings.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.DisplayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".main.DfuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".main.DfuBeatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".main.DfuNotiActvity" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <!-- <activity
+             android:name="com.isport.main.HeartRateActivity"
+             android:screenOrientation="portrait"
+             android:theme="@style/Theme.AppCompat">
+         </activity>-->
+
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.ControlThreeActionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.isport.tracker.main.CamaraActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".main.settings.sport.MessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"></activity>
+        <activity
+            android:name=".main.settings.sport.ActivityWeather"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <activity
+            android:name=".main.settings.sport.ActivitySportMode"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <activity
+            android:name="com.isport.tracker.main.settings.sport.NotiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+        <!--<activity-->
+        <!--android:name="com.isport.tracker.main.settings.ActivityGoogleFit"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/Theme.AppCompat"-->
+        <!--/>-->
+
+        <activity
+            android:name="com.isport.tracker.main.settings.ActivityAddAccount"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.isport.trackerpluse.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+
+        </provider>
+
+        <receiver android:name="com.isport.tracker.bluetooth.HamaSmsListener">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!--<receiver android:name="com.isport.isportlibrary.call.SMSBroadcastReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+-->
+        <receiver android:name="com.isport.tracker.bluetooth.call.CallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="com.android.phone.NotificationMgr.MissedCall_intent" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.isport.tracker.bluetooth.BootReceive">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.isport.tracker.bluetooth.MainService" />
+
+        <service android:name="com.isport.tracker.bluetooth.BootstrapService" />
+
+        <service
+            android:name=".bluetooth.notifications.NotifService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+            <meta-data
+                android:name="isport.pklist"
+                android:resource="@xml/accessibility_packlist" />
+        </service>
+
+        <service
+            android:name=".bluetooth.MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+
+        </service>
+
+        <service
+            android:name=".keeplive.RemoteService"
+            android:process=":remoteservice" />
+        <service android:name=".bluetooth.DfuService" />
+        <service
+            android:name=".bluetooth.notifications.NotiServiceListener"
+            android:label="@string/name_isport"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

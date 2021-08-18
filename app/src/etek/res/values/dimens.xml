@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="header_height">40dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+    <dimen name="activity_vertical_margin_bottom">32dp</dimen>
+    <dimen name="feature_horizontal_margin">50dp</dimen>
+    <dimen name="feature_vertical_margin_top">50dp</dimen>
+    <dimen name="feature_section_padding">8dp</dimen>
+    
+    <!-- ride main -->
+    <dimen name="textSize_value_big">60dp</dimen>
+    <dimen name="textSize_value_small">40dp</dimen>
+    <dimen name="textSize_label">12dp</dimen>
+    <dimen name="marginTop_label">-5dp</dimen>
+
+    <!-- font sizes -->
+    <dimen name="font_larger">30sp</dimen><!-- OK -->
+    <dimen name="font_large">24sp</dimen><!-- OK -->
+    <dimen name="font_large_20">20sp</dimen><!-- OK -->
+    <dimen name="font_normal">18sp</dimen><!-- OK -->
+    <dimen name="font_normal_16">16sp</dimen><!-- OK -->
+    <dimen name="font_normal_17">17sp</dimen><!-- OK -->
+    <dimen name="font_normal_15">15sp</dimen>
+    <dimen name="font_small_14">14sp</dimen><!-- OK -->
+    <dimen name="font_small_13">13sp</dimen><!-- OK -->
+    <dimen name="font_small">12sp</dimen><!-- OK -->
+    <dimen name="font_small_11">11sp</dimen><!-- OK -->
+    <dimen name="font_tiny">8sp</dimen><!-- OK -->
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_huge">40dp</dimen><!-- OK -->
+    <dimen name="spacing_larger">30dp</dimen><!-- OK -->
+    <dimen name="spacing_large">22dp</dimen><!-- OK -->
+    <dimen name="spacing_large_20">20dp</dimen><!-- OK -->
+    <dimen name="spacing_normal">16dp</dimen><!-- OK -->
+    <dimen name="spacing_normal_15">15dp</dimen><!-- OK -->
+    <dimen name="spacing_normal_14">14dp</dimen><!-- OK -->
+    <dimen name="spacing_normal_12">12dp</dimen><!-- OK -->
+    <dimen name="spacing_small">10dp</dimen><!-- OK -->
+    <dimen name="spacing_small_9">9dp</dimen><!-- OK -->
+    <dimen name="spacing_small_8">8dp</dimen><!-- OK -->
+    <dimen name="spacing_small_7">7dp</dimen><!-- OK -->
+    <dimen name="spacing_small_5">5dp</dimen><!-- OK -->
+    <dimen name="spacing_smaller">6dp</dimen><!-- OK -->
+    <dimen name="spacing_tiny">4dp</dimen><!-- OK -->
+    <dimen name="spacing_tinyer">2dp</dimen><!-- OK -->
+    <dimen name="spacing_minus_tiny">-4dp</dimen><!-- OK -->
+    <!-- typical sizes of views -->
+    <dimen name="button_height_tall">60dp</dimen><!-- OK -->
+    <dimen name="button_height_normal">40dp</dimen><!-- OK -->
+    <dimen name="button_height_short">32dp</dimen><!-- OK -->
+    <!-- typical padding of views -->
+    <dimen name="padding_huger_40">40dp</dimen><!-- OK -->
+    <dimen name="padding_huger_28">28dp</dimen><!-- OK -->
+    <dimen name="padding_huger">24dp</dimen><!-- OK -->
+    <dimen name="padding_huge">20dp</dimen><!-- OK -->
+    <dimen name="padding_larger">16dp</dimen><!-- OK -->
+    <dimen name="padding_large">12dp</dimen><!-- OK -->
+    <dimen name="padding_normal_10">10dp</dimen><!-- OK -->
+    <dimen name="padding_normal">8dp</dimen><!-- OK -->
+    <dimen name="padding_small">6dp</dimen><!-- OK -->
+    <dimen name="padding_small_5">5dp</dimen><!-- OK -->
+    <dimen name="padding_smaller">4dp</dimen><!-- OK -->
+    <dimen name="padding_tiny">2dp</dimen><!-- OK -->
+    <!-- typical image of views -->
+    <dimen name="image_height_taller">126dp</dimen><!-- OK -->
+    <dimen name="image_height_tall">96dp</dimen><!-- OK -->
+    <dimen name="image_height_normal_62">62dp</dimen><!-- OK -->
+    <dimen name="image_height_normal_46">46dp</dimen><!-- OK -->
+    <dimen name="image_height_normal">56dp</dimen><!-- OK -->
+    <dimen name="image_height_small_37">37dp</dimen><!-- OK -->
+    <dimen name="image_height_small">36dp</dimen><!-- OK -->
+    <dimen name="image_height_small_35">35dp</dimen><!-- OK -->
+    <dimen name="image_height_small_30">30dp</dimen><!-- OK -->
+    <dimen name="image_height_small_28">28dp</dimen><!-- OK -->
+    <dimen name="image_height_smaller">24dp</dimen><!-- OK -->
+    <dimen name="image_height_tiny">16dp</dimen><!-- OK -->
+
+    <!-- typical title of views -->
+    <dimen name="title_height_tall">96dp</dimen><!-- OK -->
+    <dimen name="title_height_normal">56dp</dimen><!-- OK -->
+    <dimen name="title_height_normal_54">54dp</dimen><!-- OK -->
+    <dimen name="title_height_normal_45">45dp</dimen><!-- OK -->
+    <dimen name="title_height_normal_30">30dp</dimen><!-- OK -->
+
+    <dimen name="line_height_huge">10dp</dimen><!-- OK -->
+    <dimen name="line_height_larger">8dp</dimen><!-- OK -->
+    <dimen name="line_height_large">4dp</dimen><!-- OK -->
+    <dimen name="line_height_normal">2dp</dimen><!-- OK -->
+    <dimen name="line_height_small">1dp</dimen><!-- OK -->
+    <dimen name="line_height_smaller">0.4dp</dimen><!-- OK -->
+    <dimen name="line_height_tiny">0.2dp</dimen><!-- OK -->
+    <dimen name="line_height_tinyer">0.1dp</dimen><!-- OK -->
+
+    <dimen name="radius_huge">45dp</dimen>
+    <dimen name="radius_larger">20dp</dimen><!-- OK -->
+    <dimen name="radius_large">16dp</dimen><!-- OK -->
+    <dimen name="radius_large_half">8dp</dimen><!-- OK -->
+    <dimen name="radius_normal">12dp</dimen><!-- OK -->
+    <dimen name="radius_small">8dp</dimen><!-- OK -->
+    <dimen name="radius_tiny">4dp</dimen><!-- OK -->
+    <dimen name="radius_tiny2">2dp</dimen><!-- OK -->
+
+    <dimen name="layout_height_normal">142dp</dimen>
+    <dimen name="layout_height_large">160dp</dimen>
+
+
+</resources>

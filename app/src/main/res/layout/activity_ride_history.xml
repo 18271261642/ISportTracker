@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/layout_ride_title" >
+
+        <TextView
+            android:id="@+id/text_back"
+            style="@style/image_ride_title_left"
+            android:text="   "
+            android:drawableLeft="@drawable/button_back"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/image_ride_title_center"
+            android:text="@string/ride_History"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        
+        <TextView 
+            android:id="@+id/text_delete"
+            android:padding="3dp"
+            style="@style/image_ride_title_right"
+            android:background="@drawable/button_ride_delete"/>
+    </RelativeLayout>
+
+   <com.isport.tracker.lingb.swipelistview.SwipeMenuListView
+        android:id="@+id/list_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:background="#ffffff"
+        android:divider="#aaaaaa"
+        android:dividerHeight="1px" />
+
+</RelativeLayout>

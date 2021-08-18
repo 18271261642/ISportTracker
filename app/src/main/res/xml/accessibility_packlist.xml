@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>com.tencent.mobileqq</item>
+    <item>com.tencent.mm</item>
+    <item>com.skype.raider</item>
+    <item>com.skype.polaris</item>
+    <item>com.skype.rover</item>
+    <item>com.facebook.katana</item>
+    <item>com.twitter.android</item>
+    <item>com.linkedin.android</item>
+    <item>com.instagram.android</item>
+    <item>life.inovatyon</item>
+    <item>com.whatsapp</item>
+    <item>com.facebook.orca</item>
+</accessibility>

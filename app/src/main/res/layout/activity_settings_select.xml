@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_linearlayout_dialogs"
+    android:orientation="vertical" >
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/user_info_set_sex"
+        android:textColor="#764b50"
+        android:textSize="23sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#764b50" />
+
+    <RelativeLayout
+        android:id="@+id/set_sex_re_man"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/set_tv_one"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/user_info_man"
+            android:textColor="#b8b8b8"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/set_sex_man_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:contentDescription="@drawable/ic_launcher"
+            android:src="@drawable/checked_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#80363636" />
+
+    <RelativeLayout
+        android:id="@+id/set_sex_re_woman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" >
+
+        <TextView
+            android:id="@+id/set_tv_two"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/user_info_woman"
+            android:textColor="#3c3c3c"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/set_sex_woman_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:contentDescription="@drawable/ic_launcher"
+            android:src="@drawable/checked_icon" />
+    </RelativeLayout>
+
+</LinearLayout>

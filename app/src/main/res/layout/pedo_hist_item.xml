@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pedo_hist_item_date"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.isport.tracker.view.PedoHistView
+        android:id="@+id/pedo_hist_histview"
+        android:layout_above="@id/pedo_hist_item_date"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.isport.tracker.view.PedoHistView>
+</RelativeLayout>

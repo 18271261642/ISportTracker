@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="indicate_color">#01bbae</color>
+    <color name="ride_81">#01bbae</color>
+    <color name="rl_back_topline_color">#01bbae</color>
+    <color name="font.green">#01bbae</color>
+    <color name="green">#01bbae</color>
+    <color name="hist_color">#01bbae</color>
+    <color name="pathcolor">#01bbae</color>
+</resources>

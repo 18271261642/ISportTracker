@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1a"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:indeterminateDrawable="@drawable/my_progress" >
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/tv_msga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dp"
+        android:text="正在努力加载中..."
+        android:textColor="@android:color/white"
+        android:textSize="18dip" >
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:visibility="gone"
+        android:max="100"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip" >
+    </ProgressBar>
+
+</LinearLayout>

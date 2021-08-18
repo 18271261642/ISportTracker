@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#764b50" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <com.isport.tracker.view.WheelView
+                android:id="@+id/numberPicker"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tv_uint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/textView1"
+            android:layout_width="1px"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#e7e8e8" />
+
+        <Button
+            android:id="@+id/numberPickercanle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView1"
+            android:background="@drawable/bg_dialog_cancle_btn"
+            android:text="@string/user_info_cancle"
+            android:textColor="@color/dialog_bottom_btn_text_colors" />
+
+        <Button
+            android:id="@+id/numberPickerok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/bg_dialog_ok_btn"
+            android:text="@string/user_info_done"
+            android:textColor="@color/dialog_bottom_btn_text_colors" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e7e8e8" />
+    </RelativeLayout>
+
+</LinearLayout>

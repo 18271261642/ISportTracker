@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/layout_ride_title" >
+
+        <TextView
+            android:id="@+id/text_back"
+            style="@style/image_ride_title_left"
+            android:drawableLeft="@drawable/button_back"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/image_ride_title_center"
+            android:text="@string/ride_Manage_Connections"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        
+        <TextView 
+            android:id="@+id/text_fresh"
+            android:visibility="gone"
+            android:text="refresh"
+            style="@style/image_ride_title_right"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/text_put_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/ride_black"
+        android:textSize="16dp"
+        android:text="@string/ride_Put_down_to_refresh"/>
+    
+    <TextView 
+        android:id="@+id/text_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/ride_black"
+        android:layout_above="@id/text_put_down"
+        android:textSize="16dp"
+        android:text="@string/ride_search_device"/>
+
+    <com.isport.tracker.lingb.ride.adapter.MyListView
+        android:id="@+id/manage_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/text_tip"
+        android:layout_marginTop="60dp"
+        android:background="#ffffff"
+        android:divider="#aaaaaa"
+        android:dividerHeight="1px" />
+
+</RelativeLayout>

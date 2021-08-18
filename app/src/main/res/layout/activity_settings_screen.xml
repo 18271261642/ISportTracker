@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_sleep"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/return_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/iv_back"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/Screen_Set"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa" />
+
+    <RelativeLayout style="@style/layout_sleep_item" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/protect_Color"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+            <TextView
+                android:id="@+id/tv_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Screen_Black"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:layout_margin="2dp"
+                android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Screen_White"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="@color/ride_title"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/tv_black"/>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/layout_sleep_item" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/protect_screen"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/switch_screen"
+            style="@style/check_sleep" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/rl_back_color" >
+
+        <RelativeLayout
+            android:id="@+id/return_back"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/return_back_icon"
+                style="@style/return_back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@drawable/ic_launcher"
+                android:src="@drawable/iv_back" />
+
+            <TextView
+                android:id="@+id/walknote_icon"
+                style="@style/return_back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/return_back_icon"
+                android:text="@string/all_return_back_device" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_name_menu_main"
+            style="@style/return_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/manage_device_title" />
+        
+        <TextView 
+            android:id="@+id/manage_device_fresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/refresh"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            style="@style/return_title_name"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="45dp"
+        android:background="#aaaaaa" />
+
+
+    
+    <TextView
+        android:id="@+id/text_no_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_device"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15dp"
+        android:visibility="gone" />
+    
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_marginTop="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_blehint"
+            android:layout_alignParentBottom="true"
+            android:text="@string/ble_hint"
+            android:textColor="@color/black"
+            android:background="@color/gray_light"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:layout_above="@id/tv_blehint"
+            android:id="@+id/manage_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:divider="#aaaaaa"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:dividerHeight="1px" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/manage_device_fresh_bar"
+        style="@style/manage_device_fresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@drawable/ic_launcher" />
+</FrameLayout>

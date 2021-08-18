@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+    >
+    <string name="app_version">App Version</string>
+    <string name="device_type">设备类型</string>
+    <string name="wei_exam_setting">体重秤设置</string>
+    <string name="bmi_value">BMI %.1f 偏胖</string>
+    <string name="medicine">Medicine</string>
+    <string name="drink">Drink</string>
+    <string name="clock">Clock</string>
+    <string name="inch">inch</string>
+    <string name="location_permission">You will not be able to use Bluetooth if you do not have permission for the local access.</string>
+    <string name="sms_permission">You will not be able to use the sms reminder if you do not have permission to access the sms!</string>
+    <string name="phone_permission">You will not be able to use the phone reminder if you do not have permission to access the phone state!</string>
+    <string name="storage_permission">You will not be able to write or read data if you do not have permission to access the storage!</string>
+    <string name="camera_permission">"You will not be able to use the camera if you do not have permission to access the camera!"</string>
+    
+    <string name="open_bluetooth_first">Open bluetooth first!</string>
+    <string name="application_keep_running">Application keep running</string>
+
+    <string name="sdcard_unavailable">SD Card is unavailable!</string>
+    <string name="check_update">Check Update</string>
+    <string name="ota_connecting">OTA update is connecting</string>
+    <string name="ota_startsoon">OTA update will start soon!</string>
+    <string name="file_is_not_exist">File is not exist!</string>
+    <string name="where_device_ota_mode">Whether the device is in the OTA mode?</string>
+    <string name="look_where_in_ota_mode">Had send OTA command!Please,checking the device whether is in the OTA mode.</string>
+    <string name="bluetooth_switch">Bluetooth Switch</string>
+    <string name="switch_method">Switch Method</string>
+    <string name="switch_method_manual">Manual</string>
+    <string name="close">Close</string>
+    <string name="kcal">Kcal</string>
+    <string name="switch_method_realtime">Real Time</string>
+    <string name="switch_method_timing">Timing</string>
+    <string name="calibration">Calibration</string>
+    <string name="calibrating">Calibrating...</string>
+    <string name="ota_update">OTA Update</string>
+    <string name="factory_mode">Factory Mode</string>
+    <string name="ota_updating">OTA Updating</string>
+    <string name="ready_to_ota">Readying to OTA update!</string>
+    <string name="start_update_firmware">Start Update Firmware</string>
+    <string name="is_already_in_ota_mode">Is already in the OTA mode?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="msg_scan">Searching device……</string>
+    <string name="name_isport">Activa-T</string>
+
+    <string name="accessibility_description">Active notification service in your accessibility setting. This allows BT notification to push application notification to remote device.</string>
+    <string name="msg_syncing">Synchronizating……</string>
+    <string name="all_return_back">Back</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="save_success">Save success</string>
+    <string name="return_factory">Are you sure you want to return the device to Factory Mode?</string>
+    <string name="will_lost_data">You will lose all information stored in the device!</string>
+    <!-- 主界面 -->
+    <string name="menu_main_exit">And then press a return button to exit the application</string>
+
+    <string name="exercise_trend1">Monday</string>
+    <string name="exercise_trend2">Tuesday</string>
+    <string name="exercise_trend3">Wednesday</string>
+    <string name="exercise_trend4">Thursday</string>
+    <string name="exercise_trend5">Friday</string>
+    <string name="exercise_trend6">Saturday</string>
+    <string name="exercise_trend7">Sunday</string>
+
+    <!-- OTaa -->
+    <string name="back">back</string>
+    <string name="exercise_no_value">No record~</string>
+    <!-- 闹钟 -->
+    <string name="clock_title">Alarm reminder</string>
+
+    <!-- 版本更新 -->
+    <string name="update_version_title">Software Update</string>
+    <string name="update_version_content">Find the new version, be sure to update?</string>
+    <string name="update_version_ok">Update</string>
+    <string name="update_version_cancle">Update later</string>
+
+    <!-- 设备连接 -->
+
+    <string name="manage_device_cant_conn_blue">Your device not support Bluetooth 4.0!</string>
+
+    <!-- 设备管理 -->
+    <string name="manage_device_title">Paired with hardware</string>
+    <string name="manage_device_title_1">Paired with hardware</string>
+    <string name="light_screen">please light up the screen</string>
+
+    <!-- 个人资料 -->
+    <string name="user_info_title">Personal Details</string>
+    <string name="user_info_nick_title">User\'s name</string>
+    <string name="user_info_image_title">Photo</string>
+    <string name="complete_user_info_hint_nick_name">Choose a nickname</string>
+    <string name="set_user_info_sex_title">Gender</string>
+    <string name="set_user_info_birthday_title">Age</string>
+    <string name="set_user_info_height_title">Height</string>
+    <string name="set_user_info_weight_title">Weight</string>
+    <string name="complete_user_info_default_age">30</string>
+    <string name="user_info_man">Male</string>
+    <string name="user_info_woman">Female</string>
+    <string name="left_hand">Left hand</string>
+    <string name="right_hand">Right hand</string>
+    <string name="complete_user_info_default_age_unit"></string>
+    <string name="complete_user_info_default_day_target_step">K steps per day</string>
+    <string name="complete_user_info_default_height">170</string>
+    <string name="complete_user_info_default_height_unit">cm</string>
+    <string name="complete_user_info_default_weight">65</string>
+    <string name="complete_user_info_default_weight_unit">kg</string>
+    <string name="user_info_take_photo_text">take a picture</string>
+    <string name="user_info_browsing_text">Choose from the album </string>
+    <string name="user_info_cancle">Cancel</string>
+    <string name="user_info_done">Confirm</string>
+    <string name="user_info_no_sd_card">The storage card is not found, unable to store photos！</string>
+    <string name="user_info_set_age_title">Age Setting</string>
+    <string name="set_target_title">Set daily goals</string>
+    <string name="user_info_set_height_title">Height Setting</string>
+    <string name="user_info_set_weight_title">Weight Setting</string>
+    <string name="user_info_set_sex">Gender Setting</string>
+
+    <!-- Service -->
+    <string name="header_hint_refresh_normal">Please press device button to sync data. </string>
+    <string name="header_hint_refresh_ready">Please press device button to sync data. </string>
+    <string name="header_hint_refresh_loading">Synchronizing&#8230;</string>
+    <string name="footer_hint_load_normal">Load more</string>
+    <string name="footer_hint_load_ready">Release to load more</string>
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="event">Affairs</string>
+    <string name="EVENT">AFFAIR</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="save">Save</string>
+    <string name="sunday">Sunday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="monday">Monday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="ok">Determine</string>
+    <string name="alarm_clock_set_successfully">alarm clock set successfully</string>
+    <string name="alarm_clock_set_failed">alarm clock set failed</string>
+    <string name="binding_is_successful">successfully binded！</string>
+    <string name="binding_is_fail">Paired is failed！</string>
+    <string name="no_device">no device found</string>
+    <string name="Successfully_deleted">Successfully deleted！</string>
+    <string name="steps_day">Steps</string>
+    <string name="user_information">User Info</string>
+    <string name="About_us">About us</string>
+    <string name="Version">Version</string>
+    <string name="disconnect">disconnect</string>
+    <string name="connect">connect</string>
+    <string name="unbind_success">Unpair success！</string>
+    <string name="connection_successful">connection successful！</string>
+    <string name="setting">Setting</string>
+    <string name="device">Device</string>
+    <string name="daily_goal">Daily Goals</string>
+    <string name="defalt_step">10000 Steps</string>
+    <string name="step_length">Stride Length</string>
+    <string name="wear_way">Left/Right Hand</string>
+    <string name="sedentary_reminder">Sedentary Reminder</string>
+    <string name="vibration_alarm_clock">Vibration Alarm</string>
+    <string name="restore_default_settings">Reset All Settings</string>
+    <string name="unbind">Unpair</string>
+    <string name="confrim_to_unbind">Would you like to unpair?</string>
+    <string name="time_seconds">Time(seconds)</string>
+    <string name="real_time_synchronization">Real-time synchronization</string>
+    <string name="Detailed">Details</string>
+    <string name="mark">Mark</string>
+    <string name="Remind">Sedentary Reminder</string>
+    <string name="Switch">On-Off</string>
+    <string name="no_movement_time">No Activity Time</string>
+    <string name="start_time">Beginning</string>
+    <string name="end_time">Ending</string>
+    <string name="refresh">Refresh</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="ignore_equipment">Ignore the device</string>
+    <string name="binding_equipment">Bind the device</string>
+    <string name="device_id">Device ID</string>
+    <string name="device_name">Device name</string>
+    <string name="target_title">Number of steps</string>
+    <string name="Connected">"    Connected"</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="successful_synchronization">Data sync complete</string>
+    <string name="synchronization_failure">Data sync failed</string>
+    <string name="setting_wear_way">Wearing Info Setting</string>
+    <string name="set_the_pace">Stride Setting</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="target_8_hours">target for 8 hours</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="set_metric">MM/INCH</string>
+    <string name="metric">Metric</string>
+    <string name="Inch">Imperial</string>
+    <string name="inch_uint">inch</string>
+    <string name="clear_data_seccess">Clear Data Success</string>
+    <string name="setting_seccess">Setting Success</string>
+    <string name="one_week">1Week</string>
+    <string name="two_week">2Week</string>
+    <string name="three_week">3Week</string>
+    <string name="four_week">4Week</string>
+    <string name="five_week">5Week</string>
+    <string name="six_week">6Week</string>
+    <string name="seven_week">7Week</string>
+    <string name="eight_week">8Week</string>
+    <string name="nine_week">9Week</string>
+    <string name="ten_week">10Week</string>
+    <string name="eleven_week">11Week</string>
+    <string name="twelve_week">12Week</string>
+    <string name="thirteen_week">13Week</string>
+    <string name="fourteen_week">14Week</string>
+    <string name="fifteen_week">15Week</string>
+    <string name="sixteen_week">16Week</string>
+    <string name="seventeen_week">17Week</string>
+    <string name="eighteen_week">18Week</string>
+    <string name="nineteen_week">19Week</string>
+    <string name="twenty_week">20Week</string>
+    <string name="twenty_one_week">21Week</string>
+    <string name="twenty_two_week">22Week</string>
+    <string name="twenty_three_week">23Week</string>
+    <string name="twenty_four_week">24Week</string>
+    <string name="twenty_five_week">25Week</string>
+    <string name="twenty_six_week">26Week</string>
+    <string name="twenty_seven_week">27Week</string>
+    <string name="twenty_seven_eight_week">28Week</string>
+    <string name="twenty_seven_nine_week">29Week</string>
+    <string name="thirty_week">30Week</string>
+    <string name="thirty_one_week">31Week</string>
+    <string name="thirty_two_week">32Week</string>
+    <string name="thirty_three_week">33Week</string>
+    <string name="thirty_four_week">34Week</string>
+    <string name="thirty_five_week">35Week</string>
+    <string name="thirty_six_week">36Week</string>
+    <string name="thirty_seven_week">37Week</string>
+    <string name="thirty_eight_week">38Week</string>
+    <string name="thirty_nine_week">39Week</string>
+    <string name="forty_week">40Week</string>
+    <string name="forty_one_week">41Week</string>
+    <string name="forty_two_week">42Week</string>
+    <string name="forty_three_week">43Week</string>
+    <string name="forty_four_week">44Week</string>
+    <string name="forty_five_week">45Week</string>
+    <string name="forty_six_week">46Week</string>
+    <string name="forty_seven_week">47Week</string>
+    <string name="forty_eight_wek">48Week</string>
+    <string name="forty_nine_week">49Week</string>
+    <string name="fifty_week">50Week</string>
+    <string name="fifty_one_week">51Week</string>
+    <string name="fifty_two_week">52Week</string>
+    <string name="january">Jan</string>
+    <string name="february">Feb</string>
+    <string name="march">Mar</string>
+    <string name="april">Apr</string>
+    <string name="may">May</string>
+    <string name="june">Jun</string>
+    <string name="july">Jul</string>
+    <string name="august">Aug</string>
+    <string name="september">Sep</string>
+    <string name="october">Oct</string>
+    <string name="november">Nov</string>
+    <string name="december">Dec</string>
+    <string name="set_personal_data">Set Personal Data</string>
+    <string name="confirm">Apply</string>
+    <string name="select_file">Select File</string>
+
+    <string-array name="timezone_values" translatable="false">
+        <item>"China standard time (Beijing)GMT +8"</item>
+        <item>"Yerevan GMT +4"</item>
+        <item>"Oakland GMT +12"</item>
+        <item>"Anchorage GMT -8"</item>
+        <item>"Afghan time GMT +4"</item>
+        <item>"Ala Mutu GMT +6"</item>
+        <item>"Baku GMT +5"</item>
+        <item>"Baghdad GMT +3"</item>
+        <item>"Buenos Aires GMT -3"</item>
+        <item>"Brisbane GMT +10"</item>
+        <item>"Tongatapu GMT +13"</item>
+        <item>"Amman GMT +3"</item>
+        <item>"Cairo GMT +2"</item>
+        <item>"Eastern European standard time GMT +3"</item>
+        <item>"The Atlantic time -4"</item>
+        <item>"Tbilisi GMT +4"</item>
+        <item>"Darwin GMT +9"</item>
+        <item>"Dubai GMT +4"</item>
+        <item>"Cape GMT -1"</item>
+        <item>"Guam GMT +10"</item>
+        <item>"Columbia time GMT -5"</item>
+        <!--<item>"Greenwich time (London)GMT +1"</item>-->
+        <!--<item>"système métrique"</item>-->
+        <item>Santiago GMT -3</item>
+        <item>"Vladivostok time GMT +11"</item>
+        <item>"Hobart GMT +11"</item>
+        <item>"Calcutta GMT +5"</item>
+        <item>"Kuala Lumpur GMT +8"</item>
+        <item>"Bangkok GMT +7"</item>
+        <item>"New York GMT -4"</item>
+        <item>"Mexico GMT -5"</item>
+        <item>"Chicago GMT -5"</item>
+        <item>"Pacific time GMT -7"</item>
+        <item>"Losangeles GMT -7"</item>
+        <item>"Moscow GMT +4"</item>
+        <item>"Tokyo GMT +9"</item>
+        <item>"Seoul GMT +9"</item>
+        <item>"Honolulu GMT -10"</item>
+        <item>"Sydney GMT +10"</item>
+        <item>"Amazon standard time GMT -4"</item>
+        <item>"Iran standard time GMT +4"</item>
+        <item>"Central European standard time GMT +2"</item>
+    </string-array>
+
+    <string name="please_connect">No connection, can\'t be set</string>
+    <string name="please_bind">Please pair with device first</string>
+    <string name="cancel">Cancel</string>
+    <string name="your_date_is_not_yet">Your Date Is Not Yet</string>
+    <string name="a_week">1week</string>
+
+    <string name="fail">fail</string>
+
+    <!-- Display -->
+    <string name="Display">Display Setup</string>
+    <string name="Screen">Screen</string>
+
+    <!-- Auto Sleep -->
+    <string name="Auto_Sleep">Auto Sleep</string>
+    <string name="Screen_Set">Screen Set</string>
+    <string name="Open_Auto_Sleep">Open Auto Sleep</string>
+    <string name="protect_screen">Screen Protect</string>
+    <string name="Screen_Black">Black</string>
+    <string name="Screen_White">White</string>
+    <string name="protect_Color">Screen Color</string>
+    <string name="Sleep_Time">Sleep Time</string>
+    <string name="Sleep_Reminder">Sleep Reminder</string>
+    <string name="Lunch_Break">NAP TIME</string>
+    <string name="Lunch_reminder">NAP REMINDER</string>
+    <string name="Sleep_Target">Sleep Target</string>
+    <string name="hours">hours</string>
+    <string name="hour">hour</string>
+    <string name="minute">min</string>
+    <string name="second">sec</string>
+    <string name="minutes">minutes</string>
+
+    <string name="lunch_sleep_reminder">NAP REMINDER</string>
+    <!--call sms-->
+    <string name="do_not_disturb">Do Not Disturb</string>
+    <string name="call_nitification">Call Notification</string>
+    <string name="sms_nitification">SMS Notification</string>
+    <string name="notification">Notification</string><!-- new -->
+    <string name="app_notification">APP Notification</string><!-- new -->
+    <string name="sms_details">SMS Display</string>
+    <string name="accessibility">Mutil-Media Controller</string>
+    <string name="anti_lost_device">Anti-lost</string>
+    <!--heartRate-->
+    <string name="hr_value_unit">bpm</string>
+    <string name="hr_max">Max:%d</string>
+    <string name="hr_max_default">Max:--</string>
+    <string name="hr_min">Min:%d</string>
+    <string name="hr_min_default">Min:--</string>
+    <string name="hr_avg">Avg:%d</string>
+    <string name="hr_avg_default">Avg:--</string>
+    <string name="hr_not_available_value">--bpm</string>
+    <string name="hr_heart_rate_value">%dbpm</string>
+    <string name="hr_discard">Discard</string>
+    <string name="hr_save">save</string>
+    <string name="hr_cancel">cancel</string>
+    <string name="hr_ok">ok</string>
+    <string name="hr_dialog_content">Confirm to discard?</string>
+    <string name="hr_history_title">HISTORY</string>
+    <string name="hr_total_time">Total time</string>
+    <string name="hr_average_bpm">Average BPM</string>
+    <string name="hr_max_bpm">Max BPM</string>
+    <string name="hr_min_bpm">Min BPM</string>
+    <string name="setting_find_device">Find Device</string>
+    <string name="setting_auto_save_hr_data">Auto Heart Rate Data Saving</string>
+    <string name="ht_delete_history">Delete the record</string>
+    <string name="ht_open_heart_rate">please open heart rate</string>
+    <string name="Auto_heartRate">Auto Heart Rate Detection</string>
+    <string name="Auto_heartRate_title">Timing heart rate detection</string>
+    <!--<string name="Auto_heartRate1">Timing heart rate detection 1</string>-->
+    <!--<string name="Auto_heartRate2">Timing heart rate detection 2</string>-->
+    <!--<string name="Auto_heartRate3">Timing heart rate detection 3</string>-->
+    <string name="Auto_heartRate1">1st Interval</string>
+    <string name="Auto_heartRate2">2nd Intervalc</string>
+    <string name="Auto_heartRate3">3rd Interval</string>
+    <string name="is_enable">enable</string>
+    <string name="connect_hr">please connect heart rate</string>
+    <string name="hr_start">Start</string>
+    <string name="hr_end">End</string>
+
+
+    <string name="auto_takephoto">auto Takephoto</string>
+    <string name="switch_camera">switch Camera</string>
+    <string name="sleep_quality">Sleep quality</string>
+</resources>

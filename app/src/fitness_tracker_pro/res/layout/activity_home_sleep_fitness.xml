@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F9F9F9" >
+
+    <com.isport.tracker.view.vertical.VerticalViewPager
+        android:id="@+id/home_vericalpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.isport.tracker.view.vertical.VerticalViewPager>
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/main_fragment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:contentDescription="@drawable/ic_launcher"
+            android:src="@drawable/main_fragment_date_icon" />
+
+        <ImageView
+            android:id="@+id/main_fragment_today_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:contentDescription="@drawable/ic_launcher"
+            android:src="@drawable/main_fragment_today_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

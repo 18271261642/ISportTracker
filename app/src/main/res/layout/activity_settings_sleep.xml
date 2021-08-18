@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ifavor="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_sleep"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/return_back"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/iv_back"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/Auto_Sleep"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="@string/save"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa" />
+
+    <RelativeLayout style="@style/layout_sleep_item" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Open_Auto_Sleep"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <com.isport.tracker.view.EasySwitchButton
+            android:id="@+id/switch_sleep"
+            ifavor:isOpened="false"
+            ifavor:switch_off="@drawable/ios7_switch_off"
+            ifavor:switch_on="@drawable/ios7_switch_on"
+            style="@style/check_sleep" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layout_sleep_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_sleep_item_title"
+                    android:text="@string/Sleep_Time" />
+
+                <RelativeLayout style="@style/layout_sleep_item" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/switch_sleep_time" >
+
+                        <TextView
+                            android:id="@+id/text_sleep_time_begin"
+                            android:onClick="onClick"
+                            android:clickable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="22:00"
+                            android:textColor="@color/textcolor_enble_selector"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="~"
+                            android:textColor="@color/text_sleep_disable"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/text_sleep_time_end"
+                            android:onClick="onClick"
+                            android:clickable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="06:00"
+                            android:textColor="@color/textcolor_enble_selector"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <com.isport.tracker.view.EasySwitchButton
+                        android:id="@+id/switch_sleep_time"
+                        ifavor:isOpened="false"
+                        ifavor:switch_off="@drawable/ios7_switch_off"
+                        ifavor:switch_on="@drawable/ios7_switch_on"
+                        style="@style/check_sleep" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lly_sleep_reminder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_sleep_item_title"
+                    android:text="@string/Sleep_Reminder" />
+
+                <RelativeLayout style="@style/layout_sleep_item" >
+
+                    <TextView
+                        android:id="@+id/text_reminder"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/switch_reminder"
+                        android:gravity="center"
+                        android:text="15min"
+                        android:textColor="@color/textcolor_enble_selector"
+                        android:textSize="16dp" />
+
+                    <com.isport.tracker.view.EasySwitchButton
+                        android:id="@+id/switch_reminder"
+                        ifavor:isOpened="false"
+                        ifavor:switch_off="@drawable/ios7_switch_off"
+                        ifavor:switch_on="@drawable/ios7_switch_on"
+                        style="@style/check_sleep" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sleep_nap_linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_sleep_item_title"
+                    android:text="@string/Lunch_Break" />
+
+                <RelativeLayout style="@style/layout_sleep_item" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/switch_lunch" >
+
+                        <TextView
+                            android:id="@+id/text_lunch_begin"
+                            android:onClick="onClick"
+                            android:clickable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="13:00"
+                            android:textColor="@color/textcolor_enble_selector"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="~"
+                            android:textColor="@color/text_sleep_disable"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/text_lunch_end"
+                            android:onClick="onClick"
+                            android:clickable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="14:00"
+                            android:textColor="@color/textcolor_enble_selector"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <com.isport.tracker.view.EasySwitchButton
+                        android:id="@+id/switch_lunch"
+                        ifavor:isOpened="false"
+                        ifavor:switch_off="@drawable/ios7_switch_off"
+                        ifavor:switch_on="@drawable/ios7_switch_on"
+                        style="@style/check_sleep" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lly_nap_remind"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_luncher_reminder_title"
+                    style="@style/text_sleep_item_title"
+                    android:text="@string/Lunch_reminder" />
+
+                <RelativeLayout style="@style/layout_sleep_item"
+                    android:id="@+id/layout_luncher_reminder_content" >
+
+                    <TextView
+                        android:id="@+id/tv_luncher_reminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/switch_lunch_reminder"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:text="15min"
+                        android:textColor="@color/textcolor_enble_selector"
+                        android:textSize="16dp" />
+
+                    <com.isport.tracker.view.EasySwitchButton
+                        android:id="@+id/switch_lunch_reminder"
+                        ifavor:isOpened="false"
+                        ifavor:switch_off="@drawable/ios7_switch_off"
+                        ifavor:switch_on="@drawable/ios7_switch_on"
+                        style="@style/check_sleep" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_sleep_target"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_sleep_item_title"
+                    android:text="@string/Sleep_Target" />
+
+                <RelativeLayout style="@style/layout_sleep_item" >
+
+                    <TextView
+                        android:id="@+id/text_target"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="8hour"
+                        android:textColor="@color/textcolor_enble_selector"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

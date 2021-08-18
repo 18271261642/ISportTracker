@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ifavor="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/rl_back_color">
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/save"
+            android:textColor="@color/back_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableLeft="@drawable/iv_back"
+            android:drawablePadding="3dp"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textColor="@color/back_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/back_color"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F0F0F0" />
+
+    <LinearLayout
+        android:id="@+id/layout_allday"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/all_day"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+
+
+        <com.isport.tracker.view.EasySwitchButton
+            android:id="@+id/esb_allday_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            ifavor:isOpened="false"
+            ifavor:switch_off="@drawable/ios7_switch_off"
+            ifavor:switch_on="@drawable/ios7_switch_on" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#E5E5E5" />
+
+    <LinearLayout
+        android:id="@+id/ll_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="5min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="10min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_15"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="15min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_20"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="20min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_25"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="25min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_30"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="30min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_35"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="35min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_40"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="40min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_45"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="45min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_50"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="50min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_55"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="55min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_60"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="60min"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#E5E5E5" />
+    </LinearLayout>
+
+</LinearLayout>
