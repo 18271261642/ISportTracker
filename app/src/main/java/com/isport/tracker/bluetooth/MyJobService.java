@@ -81,7 +81,7 @@ public class MyJobService extends JobService {
             }
 
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
 

@@ -461,17 +461,17 @@ public class MainService extends BleService implements OnHeartListener {
     private Ringtone ringtone;
 
     private void lostReminder() {
-        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
-        ringtone = RingtoneManager.getRingtone(this, notification);
-        if (ringtone == null) {
-            notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
-            ringtone = RingtoneManager.getRingtone(this, notification);
-        }
-        if (ringtone != null && !ringtone.isPlaying()) {
-            ringtone.play();
-        }
-        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        vibrator.vibrate(new long[]{400, 800, 400, 800, 400, 800, 400, 800, 400, 800}, -1);
+//        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+//        ringtone = RingtoneManager.getRingtone(this, notification);
+//        if (ringtone == null) {
+//            notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+//            ringtone = RingtoneManager.getRingtone(this, notification);
+//        }
+//        if (ringtone != null && !ringtone.isPlaying()) {
+//            ringtone.play();
+//        }
+//        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+//        vibrator.vibrate(new long[]{400, 800, 400, 800, 400, 800, 400, 800, 400, 800}, -1);
     }
 
     //TODO 设置的回调
