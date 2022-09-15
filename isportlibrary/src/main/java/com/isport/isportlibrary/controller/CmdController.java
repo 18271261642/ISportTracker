@@ -5333,7 +5333,7 @@ public class CmdController extends BaseController {
                     currentNotiIndex = 1;
 
                 } catch (Exception e) {
-
+                    e.printStackTrace();
                 }
 
 

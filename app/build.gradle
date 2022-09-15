@@ -1,4 +1,7 @@
-apply plugin: 'com.android.application'
+//api plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 //apply plugin: 'com.google.gms.google-services'
 
 def buildTime() {
@@ -6,14 +9,15 @@ def buildTime() {
 }
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 29
+        targetSdkVersion 30
         multiDexEnabled true
 
         ndk {
-            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            //'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            abiFilters   'armeabi-v7a',  'arm64-v8a'
         }
         javaCompileOptions {
             annotationProcessorOptions {
@@ -21,6 +25,12 @@ android {
             }
         }
     }
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
 
     //忽略未翻译
     lintOptions {
@@ -86,8 +96,8 @@ android {
         energetics {
             dimension "color"
             applicationId "com.energetics.tracker"
-            versionCode = 138
-            versionName = '3.0.25'
+            versionCode = 141
+            versionName = '3.0.28'
 
             buildConfigField 'String', 'PRODUCT', '"energetics"'
             buildConfigField 'String', 'PRODUCT_ID', '"com.energetics.tracker"'
@@ -166,7 +176,7 @@ dependencies {
     implementation project(path: ':isportlibrary')
     implementation fileTree(include: ['*.jar', '*.arr'], dir: 'libs')
 
-    compile(name: 'dfu', ext: 'aar')
+    implementation(name: 'dfu', ext: 'aar')
 
     //implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
@@ -178,9 +188,9 @@ dependencies {
     implementation 'com.prolificinteractive:material-calendarview:1.4.0'
 
 
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
-    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
 //图片库
     api 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'

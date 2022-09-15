@@ -500,7 +500,7 @@ public class NotiManager {
             CmdController.getInstance(mContext).sendNotiCmd(new NotificationMsg(type, content));
 
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
 

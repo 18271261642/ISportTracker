@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -47,7 +48,7 @@ public class NotiServiceListener extends NotificationListenerService {
 //            05-16 14:26:23.650 5800-5800/com.isport.tracker E/NotiManager: **title的长度小于15**
 //            05-16 14:26:23.650 5800-5800/com.isport.tracker E/com.isport.isportlibrary.controller.CmdController: ***NotiManager.msgVector长度***0
     @SuppressLint("HandlerLeak")
-    private final Handler mHandler = new Handler() {
+    private final Handler mHandler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);

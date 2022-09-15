@@ -24,6 +24,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.os.Message;
 import android.os.PowerManager;
 import android.os.RemoteException;
@@ -234,7 +235,7 @@ public class MainService extends BleService implements OnHeartListener {
             }
 
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
 
@@ -1247,7 +1248,7 @@ public class MainService extends BleService implements OnHeartListener {
     ///心率超时定时器，超过十秒没有数据自动保存数据
    /* private Timer heartTimer;
     private TimerTask heartTimerTask;*/
-    private Handler heartHandler = new Handler() {
+    private final Handler heartHandler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);

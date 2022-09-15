@@ -2,39 +2,39 @@
 buildscript {
     repositories {
 
-        jcenter()
+        // 阿里云云效仓库：https://maven.aliyun.com/mvn/guide
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // 华为开源镜像：https://mirrors.huaweicloud.com/
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' }
+        // JitPack 远程仓库：https://jitpack.io
+        maven { url 'https://jitpack.io' }
         mavenCentral()
-        maven { url "https://jitpack.io" }
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
-        }
-        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
-        maven { url 'https://dl.bintray.com/umsdk/release' }
         google()
+        // noinspection JcenterRepositoryObsolete
+        jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.0.2"
+        classpath 'com.android.tools.build:gradle:4.1.0'
         classpath 'com.google.gms:google-services:4.0.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.1'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+//        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.1'
+//        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 allprojects {
     repositories {
 
-        google()
-        jcenter()
+        // 阿里云云效仓库：https://maven.aliyun.com/mvn/guide
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // 华为开源镜像：https://mirrors.huaweicloud.com/
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' }
+        // JitPack 远程仓库：https://jitpack.io
+        maven { url 'https://jitpack.io' }
         mavenCentral()
-        maven { url "https://jitpack.io" }
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
-        }
-        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
-        //cookiejar_version
-        maven { url 'https://dl.bintray.com/umsdk/release' }
-        maven {
-            url "https://maven.google.com"
-        }
+        google()
+        // noinspection JcenterRepositoryObsolete
+        jcenter()
     }
 }
 task clean(type: Delete) {

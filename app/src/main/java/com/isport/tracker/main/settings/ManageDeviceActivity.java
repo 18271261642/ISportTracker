@@ -468,6 +468,7 @@ public class ManageDeviceActivity extends BaseActivity implements View.OnClickLi
     };
 
 
+
     //TODO 设备类型区分
     private MyBaseDevice handleActionFount(BaseDevice device) {
         String name = device.getName();
