@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+	tools:ignore="MissingTranslation"
+	tools:locale="de">
+
+    <string name="ride_tire_null">Bitte geben Sie die Reifengröße vor dem Speichern an</string>
+    <string name="ride_search_device">Drehen Sie die Pedale, um den Sensor zu aktivieren</string>
+    <string name="ride_turn_on_ble">Bitte aktivieren Sie Bluetooth</string>
+    <string name="ride_device_is_connected">Gerät ist verbunden</string>
+    <string name="ride_device_is_not_connected">Gerät ist nicht verbunden</string>
+    <string name="ride_no_device_connect">Kein Gerät verbunden, bitte überprüfen Sie die Einstellungen</string>
+    
+    <string name="ride_Height">Größe </string>
+	<string name="ride_Weight">Gewicht</string>
+	<string name="ride_cm">cm</string>
+	<string name="ride_kg">kg</string>
+	<string name="ride_in">in</string>
+	<string name="ride_lbs">Pfd.</string>
+	
+	<string name="ride_Male">Männlich</string>
+	<string name="ride_Female">Weiblich</string>
+	<string name="ride_Metric">Metrisch</string>
+	<string name="ride_Imperial">Britisch</string>
+	<string name="ride_kmh">km/h</string>
+	<string name="ride_mph">mph</string>
+	<string name="ride_km">km</string>
+	<string name="ride_mi">mi</string>
+	<string name="ride_Distance">Distanz</string>
+	<string name="ride_Speed">Geschwindigkeit</string>
+	<string name="ride_Cadence">Kadenz</string>
+	<string name="ride_Time">Zeit</string>
+	<string name="ride_Max">Max</string>
+	<string name="ride_Min">Min</string>
+	<string name="ride_average">Ø</string>
+	
+	
+	<string name="ride_average_speed">Ø Geschwindigkeit</string>
+	<string name="ride_max_speed">Max Geschwindigkeit</string>
+	<string name="ride_min_speed">Min Geschwindigkeit</string>
+	<string name="ride_average_cadence">Ø Kadenz</string>
+	<string name="ride_max_cadence">Max Kadenz</string>
+	<string name="ride_min_cadence">Min Kadenz</string>
+	
+	<string name="ride_cadence_rpm">Kadenz(RPM)</string>
+	<string name="ride_average_cadence_rpm">Ø Kadenz(RPM)</string>
+	<string name="ride_max_cadence_rpm">Max Kadenz(RPM)</string>
+	<string name="ride_min_cadence_rpm">Min Kadenz(RPM)</string>
+	
+	<string name="ride_Settings">Einstellungen</string>
+	<string name="ride_History">Historie</string>
+	<string name="ride_Save">Sichern</string>
+	<string name="ride_discard">Verwerfen</string>
+	<string name="ride_Cancel">Abbrechen</string>
+	<string name="ride_Confirm">Bestätigen</string>
+	<string name="ride_Confirm_to_discard">Verwerfen bestätigen?</string>
+	
+	<string name="ride_Total_Time">Gesamtzeit</string>
+	<string name="ride_Total_Distance">Gesamtentfernung</string>
+	<string name="ride_delete_record">Aufzeichnung löschen?</string>
+	<string name="ride_delete_all_record">Alle Aufzeichnungen löschen?</string>
+	
+	<string name="ride_Userinfo">Benutzer-Info</string>
+	<string name="ride_Not_connected">Nicht verbunden</string>
+	<string name="ride_Connected">Verbunden</string>
+	<string name="ride_Add_a_new_device">Neues Gerät hinzufügen</string>
+	<string name="ride_Version">Version</string>
+	
+	<string name="ride_Put_down_to_refresh">Zum Aktualisieren herunterziehen</string>
+	<string name="ride_Searching">Suchen…</string>
+	<string name="ride_Manage_Connections">Verbindung verwalten</string>
+	<string name="ride_Delete_device">Gerät löschen?</string>
+	<string name="ride_Connect">Verbinden</string>
+	<string name="ride_Disconnect">Trennen</string>
+	<string name="ride_Delete">Löschen</string>
+	
+	<string name="ride_Unit_of_Measure">Maßeinheit</string>
+	<string name="ride_Birthday">Geburtstag</string>
+	<string name="ride_Gender">Geschlecht</string>
+	<string name="ride_Bike_Tire_size">Reifengröße</string>
+	<string name="ride_Custom_Tire_size">Individuelle Reifengröße</string>
+	
+	
+	
+	
+</resources>

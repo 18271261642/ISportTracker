@@ -231,7 +231,7 @@ public class MenuSetActivity extends BaseActivity implements OnClickListener {
 //                        ActivityCompat.requestPermissions(this , new String[]{Manifest.permission
 //                                .READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE} ,1);
 //                    }else {
-//                        intent = new Intent(this, com.energetics.tracker.main.settings.AboutUsActivity.class);
+//                        intent = new Intent(this, co.nowly.Energetics.main.settings.AboutUsActivity.class);
 //                        startActivity(intent);
 //                    }
                 } else {

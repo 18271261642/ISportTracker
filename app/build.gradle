@@ -9,10 +9,10 @@ def buildTime() {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 30
+        targetSdkVersion 31
         multiDexEnabled true
 
         ndk {
@@ -93,6 +93,22 @@ android {
 
     productFlavors {
 
+        etracker{
+            dimension "color"
+            applicationId "co.nowly.Energetics"
+            versionCode = 150
+            versionName = '3.1'
+
+            buildConfigField 'String', 'PRODUCT', '"etracker"'
+            buildConfigField 'String', 'PRODUCT_ID', '"co.nowly.Energetics"'
+            manifestPlaceholders = [
+                    app_name : "E-Tracker",
+                    app_icon : "@drawable/logo_isport"
+            ]
+
+        }
+        
+
         energetics {
             dimension "color"
             applicationId "com.energetics.tracker"
@@ -165,6 +181,8 @@ android {
             buildConfigField 'String', 'PRODUCT', '"reflexw"'
             buildConfigField 'String', 'PRODUCT_ID', '"com.isport.reflexw"'
         }
+        
+        
     }
 }
 
@@ -199,7 +217,7 @@ dependencies {
 //    energeticsImplementation project(path: ':android-pdf')
     /*compile(name:'android-pdfview-release',ext:'aar')*/
     /* compile(name:'pdf-pager',ext:'aar')*/
-
+    implementation project(path: ':android-pdf')
 //    implementation 'com.google.android.gms:play-services-fitness:11.6.0'
 //    implementation 'com.google.android.gms:play-services-ads:17.0.0'
     implementation 'com.google.android.gms:play-services-gass:15.0.0'

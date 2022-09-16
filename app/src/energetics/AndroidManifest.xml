@@ -10,7 +10,7 @@
         android:theme="@style/Theme.AppCompat"
         tools:replace="android:icon,android:label">
 
-        <activity android:name="com.energetics.tracker.main.settings.AboutUsActivity"
+        <activity android:name="co.nowly.Energetics.main.settings.AboutUsActivity"
             android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait"/>
 

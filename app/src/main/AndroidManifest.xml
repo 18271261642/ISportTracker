@@ -97,7 +97,8 @@
         <activity
             android:name="com.isport.tracker.main.WelcomeActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/Theme.AppCompat"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -351,7 +352,8 @@
 
         </provider>
 
-        <receiver android:name="com.isport.tracker.bluetooth.HamaSmsListener">
+        <receiver android:name="com.isport.tracker.bluetooth.HamaSmsListener"
+            android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
@@ -362,14 +364,16 @@
             </intent-filter>
         </receiver>
 -->
-        <receiver android:name="com.isport.tracker.bluetooth.call.CallReceiver">
+        <receiver android:name="com.isport.tracker.bluetooth.call.CallReceiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
                 <action android:name="com.android.phone.NotificationMgr.MissedCall_intent" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.isport.tracker.bluetooth.BootReceive">
+        <receiver android:name="com.isport.tracker.bluetooth.BootReceive"
+            android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
@@ -384,7 +388,8 @@
 
         <service
             android:name=".bluetooth.notifications.NotifService"
-            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
@@ -410,7 +415,8 @@
         <service
             android:name=".bluetooth.notifications.NotiServiceListener"
             android:label="@string/name_isport"
-            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>

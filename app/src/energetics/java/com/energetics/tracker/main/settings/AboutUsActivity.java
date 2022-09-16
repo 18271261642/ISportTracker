@@ -1,4 +1,4 @@
-package com.energetics.tracker.main.settings;
+package co.nowly.Energetics.main.settings;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
